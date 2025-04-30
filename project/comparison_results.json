@@ -1,0 +1,68 @@
+{
+    "files": [
+        {
+            "file": "file1.xlsx",
+            "columns": [
+                "Age",
+                "Email",
+                "Name"
+            ]
+        },
+        {
+            "file": "file2.xlsx",
+            "columns": [
+                "Age",
+                "Email",
+                "Name",
+                "Phone"
+            ]
+        },
+        {
+            "file": "file3.xlsx",
+            "columns": [
+                "Address",
+                "Email",
+                "Name",
+                "Phone"
+            ]
+        },
+        {
+            "file": "file4.xlsx",
+            "columns": [
+                "Address",
+                "Email",
+                "Last Name",
+                "Name",
+                "Phone"
+            ]
+        }
+    ],
+    "comparisons": [
+        {
+            "previous_file": "file1.xlsx",
+            "current_file": "file2.xlsx",
+            "added": [
+                "Phone"
+            ],
+            "removed": []
+        },
+        {
+            "previous_file": "file2.xlsx",
+            "current_file": "file3.xlsx",
+            "added": [
+                "Address"
+            ],
+            "removed": [
+                "Age"
+            ]
+        },
+        {
+            "previous_file": "file3.xlsx",
+            "current_file": "file4.xlsx",
+            "added": [
+                "Last Name"
+            ],
+            "removed": []
+        }
+    ]
+}

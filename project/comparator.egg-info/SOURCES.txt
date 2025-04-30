@@ -1,0 +1,15 @@
+README.md
+setup.py
+comparator/__init__.py
+comparator/column_extractor.py
+comparator/comparator.py
+comparator/main.py
+comparator.egg-info/PKG-INFO
+comparator.egg-info/SOURCES.txt
+comparator.egg-info/dependency_links.txt
+comparator.egg-info/requires.txt
+comparator.egg-info/top_level.txt
+tests/__init__.py
+tests/create_test_files.py
+tests/test_comparator.py
+tests/test_extractor.py

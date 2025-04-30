@@ -1,0 +1,5 @@
+Metadata-Version: 2.2
+Name: comparator
+Version: 0.1
+Requires-Dist: openpyxl>=3.0.0
+Dynamic: requires-dist
