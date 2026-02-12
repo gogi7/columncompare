@@ -1,0 +1,52 @@
+# Database files (large, regenerated from source data)
+*.db
+*.sqlite
+*.sqlite3
+
+# Compressed archives
+*.7z
+*.zip
+
+# Large data files
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Analysis output directories (regenerated)
+analysis_run_*/
+comparison_results/
+pre_rendered_timelines/
+
+# HTML reports (regenerated)
+profile_*.html
+report.html
+
+# Backup files
+backups/
+*.bak
+*~ 
+
+# Log files
+*.log
+
+# SQLiteBrowser project files
+*.sqbpro
