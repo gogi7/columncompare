@@ -1,0 +1,2926 @@
+{
+    "report_generated_at": "2025-12-09T15:18:43.476340",
+    "database_path": "C:\\Tools PHPC\\columncompare\\merged_data_validated.db",
+    "database_file_size": "980.69 MB",
+    "tables": {
+        "combined_data": {
+            "row_count": 746527,
+            "schema": [
+                {
+                    "name": "Country",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Modality",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "CustomerName",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "GroupID",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ConnectionID",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Device Capability",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "EquipmentNumber",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SW Release",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Serial#",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Material",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "iSSLlink",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "MarketProblemStats",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ProblemCategory",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "DROPOFF REASON?",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "System Status",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "User Status",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "RsnContactAge",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "M2MContactAge",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "FTContactAge",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Axeda Material",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "AxedaFriendlyName",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "AxedaMemberName",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "AxedaSerialNo",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "DaysSinceContractStart",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ActualLiveConnectionStatus",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ExclusionCategory",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Zone/Regions",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Districts",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Territory",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "City",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Contract StartDate",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Contract Type",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Current Validation Status",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Exclusion - M2M?",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Exclusion - RSN?",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Exclusion FileTransfer?",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "HCFAddress",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "M2MSourceIP",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "WorkCenter",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Market",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "RSN Material",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "RSN SerialNo",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "RSNIPAddress",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP Material description",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Administrative Connection Status",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Problem-SAPValidation",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Problem-RsnConnection",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Problem-RsnReachability",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Problem-M2MConnection",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Problem-M2MReachability",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Problem-PRS-FTConnection",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Problem-PRS-FTReachability",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Year",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Week Num",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Week",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Date",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "CMVPN Candidate",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "CMVPN Configured",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "CMVPN Configured and Reachable",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Connected - IoT?",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ConnectionStatusBasic",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ConnectionType",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Contract EndDate",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Exclusion - IoT?",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Final Windows version",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Included - IoT?",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "IoTAgingDays",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "IoTConnectionType",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "IoTContactAge",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "IoTReportTimestamp",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Last Axeda Contact",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Last IoT Contact",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Last RSN Contact",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Last Successful Download in PRS",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "LocalIPAddress",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Never Connected",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Problem-IoTConnection",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Problem-IoTReachability",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Reachable",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Site Connection Status",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "TR",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Source_Filename",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "DateKey_fk",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "indexes": [
+                {
+                    "name": "idx_cd_tr",
+                    "unique": false,
+                    "columns": [
+                        "TR"
+                    ]
+                },
+                {
+                    "name": "idx_cd_eqp_year_week",
+                    "unique": false,
+                    "columns": [
+                        "EquipmentNumber",
+                        "Year",
+                        "Week"
+                    ]
+                },
+                {
+                    "name": "idx_cd_eqp",
+                    "unique": false,
+                    "columns": [
+                        "EquipmentNumber"
+                    ]
+                },
+                {
+                    "name": "idx_cd_year_week",
+                    "unique": false,
+                    "columns": [
+                        "Year",
+                        "Week"
+                    ]
+                },
+                {
+                    "name": "idx_combined_material_cd",
+                    "unique": false,
+                    "columns": [
+                        "Material"
+                    ]
+                },
+                {
+                    "name": "idx_combined_equipment_num_cd",
+                    "unique": false,
+                    "columns": [
+                        "EquipmentNumber"
+                    ]
+                },
+                {
+                    "name": "idx_combined_material_datekey",
+                    "unique": false,
+                    "columns": [
+                        "Material",
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_region_tr_date",
+                    "unique": false,
+                    "columns": [
+                        "Zone/Regions",
+                        "TR",
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_modality_tr_date",
+                    "unique": false,
+                    "columns": [
+                        "Modality",
+                        "TR",
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_eqp_tr_date",
+                    "unique": false,
+                    "columns": [
+                        "EquipmentNumber",
+                        "TR",
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_tr_datekey",
+                    "unique": false,
+                    "columns": [
+                        "TR",
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_zone_tr_datekey",
+                    "unique": false,
+                    "columns": [
+                        "Zone/Regions",
+                        "TR",
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_zone_datekey",
+                    "unique": false,
+                    "columns": [
+                        "Zone/Regions",
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_customer_datekey",
+                    "unique": false,
+                    "columns": [
+                        "CustomerName",
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_equipment_datekey",
+                    "unique": false,
+                    "columns": [
+                        "EquipmentNumber",
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_district_modality_datekey",
+                    "unique": false,
+                    "columns": [
+                        "Districts",
+                        "Modality",
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_data_DateKey_fk",
+                    "unique": false,
+                    "columns": [
+                        "DateKey_fk"
+                    ]
+                },
+                {
+                    "name": "idx_combined_data_Date",
+                    "unique": false,
+                    "columns": [
+                        "Date"
+                    ]
+                }
+            ],
+            "foreign_keys": [],
+            "sample_data": [
+                {
+                    "Country": "Australia",
+                    "Modality": "AE",
+                    "CustomerName": "LISMORE BASE HOSPITAL",
+                    "GroupID": null,
+                    "ConnectionID": null,
+                    "Device Capability": "All",
+                    "EquipmentNumber": 80911301,
+                    "SW Release": "nan",
+                    "Serial#": "674",
+                    "Material": 888220,
+                    "iSSLlink": 0,
+                    "MarketProblemStats": "Connectivity Problems",
+                    "ProblemCategory": "Never Connected",
+                    "DROPOFF REASON?": null,
+                    "System Status": "ECUS INST ",
+                    "User Status": "OPER",
+                    "RsnContactAge": null,
+                    "M2MContactAge": null,
+                    "FTContactAge": null,
+                    "Axeda Material": null,
+                    "AxedaFriendlyName": null,
+                    "AxedaMemberName": null,
+                    "AxedaSerialNo": "nan",
+                    "DaysSinceContractStart": "34.0",
+                    "ActualLiveConnectionStatus": "connected",
+                    "ExclusionCategory": "Full Capability",
+                    "Zone/Regions": "NSW",
+                    "Districts": null,
+                    "Territory": null,
+                    "City": "LISMORE",
+                    "Contract StartDate": "2021-03-30T00:00:00",
+                    "Contract Type": "Primary IS ANZ",
+                    "Current Validation Status": null,
+                    "Exclusion - M2M?": "No",
+                    "Exclusion - RSN?": "No",
+                    "Exclusion FileTransfer?": "No",
+                    "HCFAddress": "HUNTER STREET2480",
+                    "M2MSourceIP": null,
+                    "WorkCenter": "AN-61-MR",
+                    "Market": "ANZ",
+                    "RSN Material": null,
+                    "RSN SerialNo": null,
+                    "RSNIPAddress": null,
+                    "SAP Material description": "Ambient Experience for MR",
+                    "Administrative Connection Status": null,
+                    "Problem-SAPValidation": null,
+                    "Problem-RsnConnection": 1,
+                    "Problem-RsnReachability": 1,
+                    "Problem-M2MConnection": 1,
+                    "Problem-M2MReachability": 1,
+                    "Problem-PRS-FTConnection": 1,
+                    "Problem-PRS-FTReachability": 1,
+                    "Year": 2021,
+                    "Week Num": "Week 17",
+                    "Week": 17,
+                    "Date": "2021-04-26T00:00:00",
+                    "CMVPN Candidate": null,
+                    "CMVPN Configured": null,
+                    "CMVPN Configured and Reachable": null,
+                    "Connected - IoT?": null,
+                    "ConnectionStatusBasic": null,
+                    "ConnectionType": null,
+                    "Contract EndDate": null,
+                    "Exclusion - IoT?": null,
+                    "Final Windows version": null,
+                    "Included - IoT?": null,
+                    "IoTAgingDays": null,
+                    "IoTConnectionType": null,
+                    "IoTContactAge": null,
+                    "IoTReportTimestamp": null,
+                    "Last Axeda Contact": null,
+                    "Last IoT Contact": null,
+                    "Last RSN Contact": null,
+                    "Last Successful Download in PRS": null,
+                    "LocalIPAddress": null,
+                    "Never Connected": null,
+                    "Problem-IoTConnection": null,
+                    "Problem-IoTReachability": null,
+                    "Reachable": null,
+                    "Site Connection Status": null,
+                    "TR": 0.0,
+                    "Source_Filename": "2021 Week 17 04 05 2021.xlsx",
+                    "DateKey_fk": 20210426
+                },
+                {
+                    "Country": "Australia",
+                    "Modality": "US",
+                    "CustomerName": "QUEENSLAND CARDIOVASCULAR GROUP",
+                    "GroupID": null,
+                    "ConnectionID": null,
+                    "Device Capability": "All",
+                    "EquipmentNumber": 61331072,
+                    "SW Release": "?",
+                    "Serial#": "USN13C0311",
+                    "Material": 795205,
+                    "iSSLlink": 1,
+                    "MarketProblemStats": "TR",
+                    "ProblemCategory": "Fully Connected and Reachable",
+                    "DROPOFF REASON?": null,
+                    "System Status": "INST ",
+                    "User Status": "OPER",
+                    "RsnContactAge": null,
+                    "M2MContactAge": 3.0,
+                    "FTContactAge": 46.0,
+                    "Axeda Material": 795205.0,
+                    "AxedaFriendlyName": "US_61331072_USN13C0311",
+                    "AxedaMemberName": "US_795205_USN13C0311",
+                    "AxedaSerialNo": "USN13C0311",
+                    "DaysSinceContractStart": "214.0",
+                    "ActualLiveConnectionStatus": "connected",
+                    "ExclusionCategory": "Full Capability",
+                    "Zone/Regions": "QLD",
+                    "Districts": null,
+                    "Territory": null,
+                    "City": "BRISBANE",
+                    "Contract StartDate": "2020-10-01T00:00:00",
+                    "Contract Type": "Value IS_US",
+                    "Current Validation Status": null,
+                    "Exclusion - M2M?": "No",
+                    "Exclusion - RSN?": "No",
+                    "Exclusion FileTransfer?": "No",
+                    "HCFAddress": "LEVEL 8, 457 WICKHAM TERRACE4000",
+                    "M2MSourceIP": "60.241.96.46",
+                    "WorkCenter": "AN-63-US",
+                    "Market": "ANZ",
+                    "RSN Material": null,
+                    "RSN SerialNo": null,
+                    "RSNIPAddress": null,
+                    "SAP Material description": "EPIQ 5C Ultrasound System",
+                    "Administrative Connection Status": null,
+                    "Problem-SAPValidation": null,
+                    "Problem-RsnConnection": 0,
+                    "Problem-RsnReachability": 0,
+                    "Problem-M2MConnection": 0,
+                    "Problem-M2MReachability": 0,
+                    "Problem-PRS-FTConnection": 0,
+                    "Problem-PRS-FTReachability": 0,
+                    "Year": 2021,
+                    "Week Num": "Week 17",
+                    "Week": 17,
+                    "Date": "2021-04-26T00:00:00",
+                    "CMVPN Candidate": null,
+                    "CMVPN Configured": null,
+                    "CMVPN Configured and Reachable": null,
+                    "Connected - IoT?": null,
+                    "ConnectionStatusBasic": null,
+                    "ConnectionType": null,
+                    "Contract EndDate": null,
+                    "Exclusion - IoT?": null,
+                    "Final Windows version": null,
+                    "Included - IoT?": null,
+                    "IoTAgingDays": null,
+                    "IoTConnectionType": null,
+                    "IoTContactAge": null,
+                    "IoTReportTimestamp": null,
+                    "Last Axeda Contact": null,
+                    "Last IoT Contact": null,
+                    "Last RSN Contact": null,
+                    "Last Successful Download in PRS": null,
+                    "LocalIPAddress": null,
+                    "Never Connected": null,
+                    "Problem-IoTConnection": null,
+                    "Problem-IoTReachability": null,
+                    "Reachable": null,
+                    "Site Connection Status": null,
+                    "TR": 1.0,
+                    "Source_Filename": "2021 Week 17 04 05 2021.xlsx",
+                    "DateKey_fk": 20210426
+                },
+                {
+                    "Country": "Australia",
+                    "Modality": "US",
+                    "CustomerName": "QUEENSLAND CHILDRENS HOSPITAL",
+                    "GroupID": null,
+                    "ConnectionID": null,
+                    "Device Capability": "All",
+                    "EquipmentNumber": 63838569,
+                    "SW Release": "nan",
+                    "Serial#": "US814B0558",
+                    "Material": 795201,
+                    "iSSLlink": 0,
+                    "MarketProblemStats": "Connectivity Problems",
+                    "ProblemCategory": "M2M Connection",
+                    "DROPOFF REASON?": null,
+                    "System Status": "INST ",
+                    "User Status": "OPER",
+                    "RsnContactAge": null,
+                    "M2MContactAge": null,
+                    "FTContactAge": null,
+                    "Axeda Material": null,
+                    "AxedaFriendlyName": null,
+                    "AxedaMemberName": null,
+                    "AxedaSerialNo": "nan",
+                    "DaysSinceContractStart": "214.0",
+                    "ActualLiveConnectionStatus": "connected",
+                    "ExclusionCategory": "Full Capability",
+                    "Zone/Regions": "QLD",
+                    "Districts": null,
+                    "Territory": null,
+                    "City": "South Brisbane",
+                    "Contract StartDate": "2020-10-01T00:00:00",
+                    "Contract Type": "Primary US ANZ",
+                    "Current Validation Status": null,
+                    "Exclusion - M2M?": "No",
+                    "Exclusion - RSN?": "No",
+                    "Exclusion FileTransfer?": "No",
+                    "HCFAddress": "LOADING DOCK LEVEL 3,53 RAYMOND TER4101",
+                    "M2MSourceIP": null,
+                    "WorkCenter": "AN-63-US",
+                    "Market": "ANZ",
+                    "RSN Material": null,
+                    "RSN SerialNo": null,
+                    "RSNIPAddress": null,
+                    "SAP Material description": "EPIQ 7C Ultrasound System",
+                    "Administrative Connection Status": null,
+                    "Problem-SAPValidation": null,
+                    "Problem-RsnConnection": 0,
+                    "Problem-RsnReachability": 0,
+                    "Problem-M2MConnection": 1,
+                    "Problem-M2MReachability": 1,
+                    "Problem-PRS-FTConnection": 0,
+                    "Problem-PRS-FTReachability": 0,
+                    "Year": 2021,
+                    "Week Num": "Week 17",
+                    "Week": 17,
+                    "Date": "2021-04-26T00:00:00",
+                    "CMVPN Candidate": null,
+                    "CMVPN Configured": null,
+                    "CMVPN Configured and Reachable": null,
+                    "Connected - IoT?": null,
+                    "ConnectionStatusBasic": null,
+                    "ConnectionType": null,
+                    "Contract EndDate": null,
+                    "Exclusion - IoT?": null,
+                    "Final Windows version": null,
+                    "Included - IoT?": null,
+                    "IoTAgingDays": null,
+                    "IoTConnectionType": null,
+                    "IoTContactAge": null,
+                    "IoTReportTimestamp": null,
+                    "Last Axeda Contact": null,
+                    "Last IoT Contact": null,
+                    "Last RSN Contact": null,
+                    "Last Successful Download in PRS": null,
+                    "LocalIPAddress": null,
+                    "Never Connected": null,
+                    "Problem-IoTConnection": null,
+                    "Problem-IoTReachability": null,
+                    "Reachable": null,
+                    "Site Connection Status": null,
+                    "TR": 0.0,
+                    "Source_Filename": "2021 Week 17 04 05 2021.xlsx",
+                    "DateKey_fk": 20210426
+                }
+            ]
+        },
+        "DimDate": {
+            "row_count": 4018,
+            "schema": [
+                {
+                    "name": "DateKey",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "FullDate",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Year",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ISOYear",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "MonthOfYear",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "MonthName",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "DayOfMonth",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "DayOfYear",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "DayOfWeek",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "DayName",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "QuarterOfYear",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "QuarterName",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "WeekOfYear",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "WeekNumText",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "WeekStartDate",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "WeekEndDate",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "WeekDateRange",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "IsWeekend",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "indexes": [
+                {
+                    "name": "idx_dimdate_fulldate",
+                    "unique": false,
+                    "columns": [
+                        "FullDate",
+                        "DateKey"
+                    ]
+                },
+                {
+                    "name": "idx_dimdate_year_month",
+                    "unique": false,
+                    "columns": [
+                        "Year",
+                        "MonthOfYear",
+                        "DateKey"
+                    ]
+                },
+                {
+                    "name": "idx_dimdate_year_quarter",
+                    "unique": false,
+                    "columns": [
+                        "Year",
+                        "QuarterOfYear",
+                        "DateKey"
+                    ]
+                },
+                {
+                    "name": "idx_dimdate_year",
+                    "unique": false,
+                    "columns": [
+                        "Year"
+                    ]
+                },
+                {
+                    "name": "idx_DimDate_DateKey",
+                    "unique": false,
+                    "columns": [
+                        "DateKey"
+                    ]
+                }
+            ],
+            "foreign_keys": [],
+            "sample_data": [
+                {
+                    "DateKey": 20200101,
+                    "FullDate": "2020-01-01",
+                    "Year": 2020,
+                    "ISOYear": 2020,
+                    "MonthOfYear": 1,
+                    "MonthName": "January",
+                    "DayOfMonth": 1,
+                    "DayOfYear": 1,
+                    "DayOfWeek": 3,
+                    "DayName": "Wednesday",
+                    "QuarterOfYear": 1,
+                    "QuarterName": "Q1",
+                    "WeekOfYear": 1,
+                    "WeekNumText": "Week 1",
+                    "WeekStartDate": "2019-12-30",
+                    "WeekEndDate": "2020-01-05",
+                    "WeekDateRange": "2019-12-30 to 2020-01-05",
+                    "IsWeekend": 0
+                },
+                {
+                    "DateKey": 20200102,
+                    "FullDate": "2020-01-02",
+                    "Year": 2020,
+                    "ISOYear": 2020,
+                    "MonthOfYear": 1,
+                    "MonthName": "January",
+                    "DayOfMonth": 2,
+                    "DayOfYear": 2,
+                    "DayOfWeek": 4,
+                    "DayName": "Thursday",
+                    "QuarterOfYear": 1,
+                    "QuarterName": "Q1",
+                    "WeekOfYear": 1,
+                    "WeekNumText": "Week 1",
+                    "WeekStartDate": "2019-12-30",
+                    "WeekEndDate": "2020-01-05",
+                    "WeekDateRange": "2019-12-30 to 2020-01-05",
+                    "IsWeekend": 0
+                },
+                {
+                    "DateKey": 20200103,
+                    "FullDate": "2020-01-03",
+                    "Year": 2020,
+                    "ISOYear": 2020,
+                    "MonthOfYear": 1,
+                    "MonthName": "January",
+                    "DayOfMonth": 3,
+                    "DayOfYear": 3,
+                    "DayOfWeek": 5,
+                    "DayName": "Friday",
+                    "QuarterOfYear": 1,
+                    "QuarterName": "Q1",
+                    "WeekOfYear": 1,
+                    "WeekNumText": "Week 1",
+                    "WeekStartDate": "2019-12-30",
+                    "WeekEndDate": "2020-01-05",
+                    "WeekDateRange": "2019-12-30 to 2020-01-05",
+                    "IsWeekend": 0
+                }
+            ]
+        },
+        "processed_files": {
+            "row_count": 31,
+            "schema": [
+                {
+                    "name": "filename",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": true
+                },
+                {
+                    "name": "processed_at",
+                    "type": "TIMESTAMP",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "indexes": [
+                {
+                    "name": "sqlite_autoindex_processed_files_1",
+                    "unique": true,
+                    "columns": [
+                        "filename"
+                    ]
+                }
+            ],
+            "foreign_keys": [],
+            "sample_data": [
+                {
+                    "filename": "2025 Week 19 04 05 2025.xlsx",
+                    "processed_at": "2025-05-20 04:09:04"
+                },
+                {
+                    "filename": "2025 Week 19 05 05 2025.xlsx",
+                    "processed_at": "2025-05-20 14:50:39.017292"
+                },
+                {
+                    "filename": "2025 Week 20 12 05 2025.xlsx",
+                    "processed_at": "2025-05-20 16:57:22.038912"
+                }
+            ]
+        },
+        "dim_date": {
+            "row_count": 1,
+            "schema": [
+                {
+                    "name": "DateKey",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": true
+                },
+                {
+                    "name": "FullDate",
+                    "type": "DATE",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Year",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Month",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Day",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "DayOfWeek",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "DayName",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "MonthName",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "indexes": [
+                {
+                    "name": "sqlite_autoindex_dim_date_1",
+                    "unique": true,
+                    "columns": [
+                        "FullDate"
+                    ]
+                }
+            ],
+            "foreign_keys": [],
+            "sample_data": [
+                {
+                    "DateKey": 20250405,
+                    "FullDate": "2025-04-05",
+                    "Year": 2025,
+                    "Month": 4,
+                    "Day": 5,
+                    "DayOfWeek": 5,
+                    "DayName": "Saturday",
+                    "MonthName": "April"
+                }
+            ]
+        },
+        "workorders": {
+            "row_count": 123798,
+            "schema": [
+                {
+                    "name": "WorkOrderNumber",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": true
+                },
+                {
+                    "name": "CaseNumber",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "EventType",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Material",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "OrderStatus",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ScheduleStatus",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "EquipmentNumber",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SerialNumber",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Modality",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAPMaterialDescription",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "WorkOrderCreatedDate",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Technician",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ServiceType",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ScheduledDateTime",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Account",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "CustomerName",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "State",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Country",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "RefreshDate",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "TechnicianMatchKey_fk",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ServiceTeam",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ServiceMaxExtractDate",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "indexes": [
+                {
+                    "name": "idx_wo_equip_scheddt",
+                    "unique": false,
+                    "columns": [
+                        "EquipmentNumber",
+                        "ScheduledDateTime"
+                    ]
+                },
+                {
+                    "name": "idx_wo_customer",
+                    "unique": false,
+                    "columns": [
+                        "CustomerName"
+                    ]
+                },
+                {
+                    "name": "idx_wo_refresh_dt",
+                    "unique": false,
+                    "columns": [
+                        "RefreshDate"
+                    ]
+                },
+                {
+                    "name": "idx_wo_created_dt",
+                    "unique": false,
+                    "columns": [
+                        "WorkOrderCreatedDate"
+                    ]
+                },
+                {
+                    "name": "idx_wo_scheduled_dt",
+                    "unique": false,
+                    "columns": [
+                        "ScheduledDateTime"
+                    ]
+                },
+                {
+                    "name": "idx_wo_serial_num",
+                    "unique": false,
+                    "columns": [
+                        "SerialNumber"
+                    ]
+                },
+                {
+                    "name": "idx_wo_material",
+                    "unique": false,
+                    "columns": [
+                        "Material"
+                    ]
+                },
+                {
+                    "name": "idx_wo_equipment_num",
+                    "unique": false,
+                    "columns": [
+                        "EquipmentNumber"
+                    ]
+                },
+                {
+                    "name": "sqlite_autoindex_workorders_1",
+                    "unique": true,
+                    "columns": [
+                        "WorkOrderNumber"
+                    ]
+                }
+            ],
+            "foreign_keys": [],
+            "sample_data": [
+                {
+                    "WorkOrderNumber": "WO-05828636",
+                    "CaseNumber": "119575776",
+                    "EventType": "Supplementary Services",
+                    "Material": 453564734111,
+                    "OrderStatus": "Fixed",
+                    "ScheduleStatus": "Confirmed",
+                    "EquipmentNumber": 94218132,
+                    "SerialNumber": "B65952",
+                    "Modality": "PCCI",
+                    "SAPMaterialDescription": "M_SpO2 OEM Masimo Rainbow SET",
+                    "WorkOrderCreatedDate": "2022-04-19",
+                    "Technician": "Bronte Westaway",
+                    "ServiceType": "Bench Repair",
+                    "ScheduledDateTime": "2022-04-21 14:39:00",
+                    "Account": "PHILIPS HEALTHCARE",
+                    "CustomerName": "PHILIPS HEALTHCARE",
+                    "State": "NSW",
+                    "Country": "Australia",
+                    "RefreshDate": "2025-06-05",
+                    "TechnicianMatchKey_fk": null,
+                    "ServiceTeam": null,
+                    "ServiceMaxExtractDate": null
+                },
+                {
+                    "WorkOrderNumber": "WO-04922149",
+                    "CaseNumber": "118841708",
+                    "EventType": "Incident",
+                    "Material": 795231,
+                    "OrderStatus": "Fixed",
+                    "ScheduleStatus": "Dispatched",
+                    "EquipmentNumber": 93530375,
+                    "SerialNumber": "US621B1626",
+                    "Modality": "US",
+                    "SAPMaterialDescription": "EPIQ CVx Ultrasound System",
+                    "WorkOrderCreatedDate": "2021-12-07",
+                    "Technician": "Sally SANIGAR",
+                    "ServiceType": "Onsite Service",
+                    "ScheduledDateTime": "2021-12-10 12:00:00",
+                    "Account": "Joondalup Private Hospital",
+                    "CustomerName": "Joondalup Private Hospital",
+                    "State": "WA",
+                    "Country": "Australia",
+                    "RefreshDate": "2025-06-05",
+                    "TechnicianMatchKey_fk": null,
+                    "ServiceTeam": null,
+                    "ServiceMaxExtractDate": null
+                },
+                {
+                    "WorkOrderNumber": "WO-05378828",
+                    "CaseNumber": "119230229",
+                    "EventType": "Field Change Order",
+                    "Material": 722079,
+                    "OrderStatus": "Fixed",
+                    "ScheduleStatus": "Dispatched",
+                    "EquipmentNumber": 85018667,
+                    "SerialNumber": "703384",
+                    "Modality": "IXR",
+                    "SAPMaterialDescription": "Azurion 7 M20",
+                    "WorkOrderCreatedDate": "2022-02-15",
+                    "Technician": "Radan IVKOVIC",
+                    "ServiceType": "Onsite Service",
+                    "ScheduledDateTime": "2022-09-01 07:00:00",
+                    "Account": "MACQUARIE UNIVERSITY HOSPITAL",
+                    "CustomerName": "MACQUARIE UNIVERSITY HOSPITAL",
+                    "State": "NSW",
+                    "Country": "Australia",
+                    "RefreshDate": "2025-06-05",
+                    "TechnicianMatchKey_fk": "radan ivkovic",
+                    "ServiceTeam": null,
+                    "ServiceMaxExtractDate": null
+                }
+            ]
+        },
+        "State_Location_Mapping": {
+            "row_count": 34,
+            "schema": [
+                {
+                    "name": "State",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "State_FSE",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Zone/Regions",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "indexes": [
+                {
+                    "name": "idx_State_Location_Mapping_state",
+                    "unique": false,
+                    "columns": [
+                        "State"
+                    ]
+                }
+            ],
+            "foreign_keys": [],
+            "sample_data": [
+                {
+                    "State": "NSW",
+                    "State_FSE": "NSW",
+                    "Zone/Regions": "NSW"
+                },
+                {
+                    "State": "WA",
+                    "State_FSE": "WA",
+                    "Zone/Regions": "WA"
+                },
+                {
+                    "State": "OTA",
+                    "State_FSE": "NZ",
+                    "Zone/Regions": "NZ"
+                }
+            ]
+        },
+        "fse": {
+            "row_count": 123,
+            "schema": [
+                {
+                    "name": "Name",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": true
+                },
+                {
+                    "name": "Job Title",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Department",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Email",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Mobile",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Location",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Company",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Reports To",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Manager Title",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Work Hours",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Time Zone Info",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "State_FSE",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Zone/Regions",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Office Address",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "TechnicianMatchKey",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "indexes": [
+                {
+                    "name": "idx_fse_match_key",
+                    "unique": false,
+                    "columns": [
+                        "TechnicianMatchKey"
+                    ]
+                },
+                {
+                    "name": "sqlite_autoindex_fse_1",
+                    "unique": true,
+                    "columns": [
+                        "Name"
+                    ]
+                }
+            ],
+            "foreign_keys": [],
+            "sample_data": [
+                {
+                    "Name": "Wong, Jimmy",
+                    "Job Title": "Customer Service Engineer",
+                    "Department": "Health Systems CS Delivery SA",
+                    "Email": "jimmy.wong_1@philips.com",
+                    "Mobile": "+61 (497) 263410",
+                    "Location": "Adelaide - Export Park",
+                    "Company": "Philips",
+                    "Reports To": "Tan, Jason",
+                    "Manager Title": "Service Team Leader",
+                    "Work Hours": "8:30 AM - 5:30 PM",
+                    "Time Zone Info": "30 minutes ahead",
+                    "State_FSE": "SA",
+                    "Zone/Regions": "VSAT",
+                    "Office Address": "Philips Australia, 6 Hamra Drive, Export Park, SA, 5950",
+                    "TechnicianMatchKey": "jimmy wong"
+                },
+                {
+                    "Name": "Tan, Jason",
+                    "Job Title": "Service Team Leader",
+                    "Department": "Health Systems CS Delivery ANZ",
+                    "Email": "jason.tan@philips.com",
+                    "Mobile": "+61 458235341",
+                    "Location": "Adelaide - Export Park",
+                    "Company": "Philips",
+                    "Reports To": "Evdokimov, Nick",
+                    "Manager Title": "CS Delivery Manager ANZ",
+                    "Work Hours": "12:30 AM - 5:30 PM",
+                    "Time Zone Info": "30 minutes ahead",
+                    "State_FSE": "SA",
+                    "Zone/Regions": "VSAT",
+                    "Office Address": "Philips Australia, 6 Hamra Drive, Export Park, SA, 5950",
+                    "TechnicianMatchKey": "jason tan"
+                },
+                {
+                    "Name": "Harrison, Kai",
+                    "Job Title": "Field Service Engineer",
+                    "Department": "Health Systems CS Delivery SA",
+                    "Email": "kai.harrison@philips.com",
+                    "Mobile": "+61 (428) 680769",
+                    "Location": "Adelaide - Export Park",
+                    "Company": "Philips",
+                    "Reports To": "Tan, Jason",
+                    "Manager Title": "Service Team Leader",
+                    "Work Hours": "8:30 AM - 5:30 PM",
+                    "Time Zone Info": "30 minutes ahead",
+                    "State_FSE": "SA",
+                    "Zone/Regions": "VSAT",
+                    "Office Address": "Philips Australia, 6 Hamra Drive, Export Park, SA, 5950",
+                    "TechnicianMatchKey": "kai harrison"
+                }
+            ]
+        },
+        "estherIB": {
+            "row_count": 542372,
+            "schema": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": true
+                },
+                {
+                    "name": "Source_Filename",
+                    "type": "TEXT",
+                    "notnull": true,
+                    "pk": false
+                },
+                {
+                    "name": "ProcessDate",
+                    "type": "TIMESTAMP",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Year",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Month_Number",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Date_File_Name",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "City",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Street",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "EqptSegment",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ContractEnd",
+                    "type": "DATETIME",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Modality",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "EquipmentNumber",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "EqptGroup",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Material",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAXDateInstalled",
+                    "type": "DATETIME",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "MaintPlant",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Region",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Description",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SerialNumber",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ContractStart",
+                    "type": "DATETIME",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAPServicePlan",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ContractType",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ContractNo",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "PostalCode",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "NetPrice",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "FunctionalLocation",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_EOL_Determination_Policy",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Software_Release",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "List_name",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Main_WorkCtr",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Maint_Plant",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Description_1",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "System_status",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "User_status",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_date_installed",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Eqpt_SHIPto",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Eqpt_SHIPto_Name",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Eqpt_SOLDto",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Eqpt_SOLDto_Name",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Cntrct_line",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_Service_Plan",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_Service_Plan_Description",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Contract_Service_Plan_Description",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Wty",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Wty_Terms",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Wty_Start",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Wty_End",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Primary_FSE_Technician",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_EOL",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_EOS",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Eqpt_Segment",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Eqpt_Group",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Comments",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Hardware_Version",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_Next_Billing_Date",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Location_Description",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "EC_comments",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "TechMax_Contract_QLIKVIEW",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "TechMax_Contract_ID_QLIKVIEW",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Acct_Shipping_Street_CSR",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Acct_Shipping_City_CSR",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Acct_Shipping_State_CSR",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Acct_Shipping_Postal_Code_CSR",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Currency",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Missing_Warranty_based_on_SMAX_Wty_Terms",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SMAX_Hardware_Version",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Missing_Warranty_based_on_SMAX_Wty_Terms_Installed_date",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Conytract_Service_Plan_Description",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "QlikView_eZCQ_Contract",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "QlikView_eZCQ_Net_Value_EUR",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "QlikView_Contract_Created_Date",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_eZCQ_Cntrct_Type",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_eZCQ_Contract_No",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_eZCQ_Contract_line",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_eZCQ_Contract_Start",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_eZCQ_Contract_End",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_eZCQ_Net_Price",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_eZCQ_Currency",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_eZCQ_Service_Plan",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_eZCQ_Service_Plan_Description",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Contract_Service_Plan_Description",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "indexes": [],
+            "foreign_keys": [],
+            "sample_data": [
+                {
+                    "id": 1,
+                    "Source_Filename": "2021_01 ANZ IB 01_01_2021.xlsx",
+                    "ProcessDate": "2025-07-21 11:48:29",
+                    "Year": 2021,
+                    "Month_Number": 1,
+                    "Date_File_Name": "01/01/2021",
+                    "City": "Macquarie Park",
+                    "Street": "299 Lane Cove Road",
+                    "EqptSegment": null,
+                    "ContractEnd": "2023-12-13 00:00:00",
+                    "Modality": null,
+                    "EquipmentNumber": 84978829.0,
+                    "EqptGroup": null,
+                    "Material": "795005",
+                    "SMAXDateInstalled": null,
+                    "MaintPlant": null,
+                    "Region": "NSW",
+                    "Description": "Lumify System",
+                    "SerialNumber": "US520L1129",
+                    "ContractStart": "2021-12-14 00:00:00",
+                    "SAPServicePlan": null,
+                    "ContractType": "ZCSP",
+                    "ContractNo": "42769343.0",
+                    "PostalCode": "2113.0",
+                    "NetPrice": null,
+                    "FunctionalLocation": "AU011173-101-011",
+                    "SMAX_EOL_Determination_Policy": null,
+                    "SMAX_Software_Release": null,
+                    "List_name": null,
+                    "Main_WorkCtr": null,
+                    "Maint_Plant": null,
+                    "Description_1": null,
+                    "System_status": null,
+                    "User_status": null,
+                    "SMAX_date_installed": null,
+                    "Eqpt_SHIPto": null,
+                    "Eqpt_SHIPto_Name": null,
+                    "Eqpt_SOLDto": null,
+                    "Eqpt_SOLDto_Name": null,
+                    "Cntrct_line": null,
+                    "SAP_Service_Plan": null,
+                    "SAP_Service_Plan_Description": null,
+                    "SMAX_Contract_Service_Plan_Description": null,
+                    "SMAX_Wty": null,
+                    "SMAX_Wty_Terms": null,
+                    "SMAX_Wty_Start": null,
+                    "SMAX_Wty_End": null,
+                    "SMAX_Primary_FSE_Technician": null,
+                    "SMAX_EOL": null,
+                    "SMAX_EOS": null,
+                    "Eqpt_Segment": null,
+                    "Eqpt_Group": null,
+                    "Comments": null,
+                    "Hardware_Version": null,
+                    "SAP_Next_Billing_Date": null,
+                    "SMAX_Location_Description": null,
+                    "EC_comments": null,
+                    "TechMax_Contract_QLIKVIEW": null,
+                    "TechMax_Contract_ID_QLIKVIEW": null,
+                    "SMAX_Acct_Shipping_Street_CSR": null,
+                    "SMAX_Acct_Shipping_City_CSR": null,
+                    "SMAX_Acct_Shipping_State_CSR": null,
+                    "SMAX_Acct_Shipping_Postal_Code_CSR": null,
+                    "Currency": null,
+                    "Missing_Warranty_based_on_SMAX_Wty_Terms": null,
+                    "SMAX_Hardware_Version": null,
+                    "Missing_Warranty_based_on_SMAX_Wty_Terms_Installed_date": null,
+                    "QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Conytract_Service_Plan_Description": null,
+                    "QlikView_eZCQ_Contract": null,
+                    "QlikView_eZCQ_Net_Value_EUR": null,
+                    "QlikView_Contract_Created_Date": null,
+                    "SAP_eZCQ_Cntrct_Type": null,
+                    "SAP_eZCQ_Contract_No": null,
+                    "SAP_eZCQ_Contract_line": null,
+                    "SAP_eZCQ_Contract_Start": null,
+                    "SAP_eZCQ_Contract_End": null,
+                    "SAP_eZCQ_Net_Price": null,
+                    "SAP_eZCQ_Currency": null,
+                    "SAP_eZCQ_Service_Plan": null,
+                    "SAP_eZCQ_Service_Plan_Description": null,
+                    "QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Contract_Service_Plan_Description": null
+                },
+                {
+                    "id": 2,
+                    "Source_Filename": "2021_01 ANZ IB 01_01_2021.xlsx",
+                    "ProcessDate": "2025-07-21 11:48:29",
+                    "Year": 2021,
+                    "Month_Number": 1,
+                    "Date_File_Name": "01/01/2021",
+                    "City": "Macquarie Park",
+                    "Street": "299 Lane Cove Road",
+                    "EqptSegment": null,
+                    "ContractEnd": "2023-12-13 00:00:00",
+                    "Modality": null,
+                    "EquipmentNumber": 84978843.0,
+                    "EqptGroup": null,
+                    "Material": "795005",
+                    "SMAXDateInstalled": null,
+                    "MaintPlant": null,
+                    "Region": "NSW",
+                    "Description": "Lumify System",
+                    "SerialNumber": "US520L1098",
+                    "ContractStart": "2021-12-14 00:00:00",
+                    "SAPServicePlan": null,
+                    "ContractType": "ZCSP",
+                    "ContractNo": "42769344.0",
+                    "PostalCode": "2113.0",
+                    "NetPrice": null,
+                    "FunctionalLocation": "AU011173-101-011",
+                    "SMAX_EOL_Determination_Policy": null,
+                    "SMAX_Software_Release": null,
+                    "List_name": null,
+                    "Main_WorkCtr": null,
+                    "Maint_Plant": null,
+                    "Description_1": null,
+                    "System_status": null,
+                    "User_status": null,
+                    "SMAX_date_installed": null,
+                    "Eqpt_SHIPto": null,
+                    "Eqpt_SHIPto_Name": null,
+                    "Eqpt_SOLDto": null,
+                    "Eqpt_SOLDto_Name": null,
+                    "Cntrct_line": null,
+                    "SAP_Service_Plan": null,
+                    "SAP_Service_Plan_Description": null,
+                    "SMAX_Contract_Service_Plan_Description": null,
+                    "SMAX_Wty": null,
+                    "SMAX_Wty_Terms": null,
+                    "SMAX_Wty_Start": null,
+                    "SMAX_Wty_End": null,
+                    "SMAX_Primary_FSE_Technician": null,
+                    "SMAX_EOL": null,
+                    "SMAX_EOS": null,
+                    "Eqpt_Segment": null,
+                    "Eqpt_Group": null,
+                    "Comments": null,
+                    "Hardware_Version": null,
+                    "SAP_Next_Billing_Date": null,
+                    "SMAX_Location_Description": null,
+                    "EC_comments": null,
+                    "TechMax_Contract_QLIKVIEW": null,
+                    "TechMax_Contract_ID_QLIKVIEW": null,
+                    "SMAX_Acct_Shipping_Street_CSR": null,
+                    "SMAX_Acct_Shipping_City_CSR": null,
+                    "SMAX_Acct_Shipping_State_CSR": null,
+                    "SMAX_Acct_Shipping_Postal_Code_CSR": null,
+                    "Currency": null,
+                    "Missing_Warranty_based_on_SMAX_Wty_Terms": null,
+                    "SMAX_Hardware_Version": null,
+                    "Missing_Warranty_based_on_SMAX_Wty_Terms_Installed_date": null,
+                    "QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Conytract_Service_Plan_Description": null,
+                    "QlikView_eZCQ_Contract": null,
+                    "QlikView_eZCQ_Net_Value_EUR": null,
+                    "QlikView_Contract_Created_Date": null,
+                    "SAP_eZCQ_Cntrct_Type": null,
+                    "SAP_eZCQ_Contract_No": null,
+                    "SAP_eZCQ_Contract_line": null,
+                    "SAP_eZCQ_Contract_Start": null,
+                    "SAP_eZCQ_Contract_End": null,
+                    "SAP_eZCQ_Net_Price": null,
+                    "SAP_eZCQ_Currency": null,
+                    "SAP_eZCQ_Service_Plan": null,
+                    "SAP_eZCQ_Service_Plan_Description": null,
+                    "QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Contract_Service_Plan_Description": null
+                },
+                {
+                    "id": 3,
+                    "Source_Filename": "2021_01 ANZ IB 01_01_2021.xlsx",
+                    "ProcessDate": "2025-07-21 11:48:29",
+                    "Year": 2021,
+                    "Month_Number": 1,
+                    "Date_File_Name": "01/01/2021",
+                    "City": "Macquarie Park",
+                    "Street": "299 Lane Cove Road",
+                    "EqptSegment": null,
+                    "ContractEnd": "2023-12-13 00:00:00",
+                    "Modality": null,
+                    "EquipmentNumber": 84978846.0,
+                    "EqptGroup": null,
+                    "Material": "795005",
+                    "SMAXDateInstalled": null,
+                    "MaintPlant": null,
+                    "Region": "NSW",
+                    "Description": "Lumify System",
+                    "SerialNumber": "US520L1132",
+                    "ContractStart": "2021-12-14 00:00:00",
+                    "SAPServicePlan": null,
+                    "ContractType": "ZCSP",
+                    "ContractNo": "42769345.0",
+                    "PostalCode": "2113.0",
+                    "NetPrice": null,
+                    "FunctionalLocation": "AU011173-101-011",
+                    "SMAX_EOL_Determination_Policy": null,
+                    "SMAX_Software_Release": null,
+                    "List_name": null,
+                    "Main_WorkCtr": null,
+                    "Maint_Plant": null,
+                    "Description_1": null,
+                    "System_status": null,
+                    "User_status": null,
+                    "SMAX_date_installed": null,
+                    "Eqpt_SHIPto": null,
+                    "Eqpt_SHIPto_Name": null,
+                    "Eqpt_SOLDto": null,
+                    "Eqpt_SOLDto_Name": null,
+                    "Cntrct_line": null,
+                    "SAP_Service_Plan": null,
+                    "SAP_Service_Plan_Description": null,
+                    "SMAX_Contract_Service_Plan_Description": null,
+                    "SMAX_Wty": null,
+                    "SMAX_Wty_Terms": null,
+                    "SMAX_Wty_Start": null,
+                    "SMAX_Wty_End": null,
+                    "SMAX_Primary_FSE_Technician": null,
+                    "SMAX_EOL": null,
+                    "SMAX_EOS": null,
+                    "Eqpt_Segment": null,
+                    "Eqpt_Group": null,
+                    "Comments": null,
+                    "Hardware_Version": null,
+                    "SAP_Next_Billing_Date": null,
+                    "SMAX_Location_Description": null,
+                    "EC_comments": null,
+                    "TechMax_Contract_QLIKVIEW": null,
+                    "TechMax_Contract_ID_QLIKVIEW": null,
+                    "SMAX_Acct_Shipping_Street_CSR": null,
+                    "SMAX_Acct_Shipping_City_CSR": null,
+                    "SMAX_Acct_Shipping_State_CSR": null,
+                    "SMAX_Acct_Shipping_Postal_Code_CSR": null,
+                    "Currency": null,
+                    "Missing_Warranty_based_on_SMAX_Wty_Terms": null,
+                    "SMAX_Hardware_Version": null,
+                    "Missing_Warranty_based_on_SMAX_Wty_Terms_Installed_date": null,
+                    "QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Conytract_Service_Plan_Description": null,
+                    "QlikView_eZCQ_Contract": null,
+                    "QlikView_eZCQ_Net_Value_EUR": null,
+                    "QlikView_Contract_Created_Date": null,
+                    "SAP_eZCQ_Cntrct_Type": null,
+                    "SAP_eZCQ_Contract_No": null,
+                    "SAP_eZCQ_Contract_line": null,
+                    "SAP_eZCQ_Contract_Start": null,
+                    "SAP_eZCQ_Contract_End": null,
+                    "SAP_eZCQ_Net_Price": null,
+                    "SAP_eZCQ_Currency": null,
+                    "SAP_eZCQ_Service_Plan": null,
+                    "SAP_eZCQ_Service_Plan_Description": null,
+                    "QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Contract_Service_Plan_Description": null
+                }
+            ]
+        },
+        "processed_estherib_files": {
+            "row_count": 51,
+            "schema": [
+                {
+                    "name": "filename",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": true
+                },
+                {
+                    "name": "processed_at",
+                    "type": "TIMESTAMP",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "status",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "indexes": [
+                {
+                    "name": "sqlite_autoindex_processed_estherib_files_1",
+                    "unique": true,
+                    "columns": [
+                        "filename"
+                    ]
+                }
+            ],
+            "foreign_keys": [],
+            "sample_data": [
+                {
+                    "filename": "2021_01 ANZ IB 01_01_2021.xlsx",
+                    "processed_at": "2025-07-21 21:48:29.687808",
+                    "status": "SUCCESS"
+                },
+                {
+                    "filename": "2021_02 ANZ IB 01_02_2021.xlsx",
+                    "processed_at": "2025-07-21 21:48:36.098737",
+                    "status": "SUCCESS"
+                },
+                {
+                    "filename": "2021_03 ANZ IB 01_03_2021.xlsx",
+                    "processed_at": "2025-07-21 21:48:45.244374",
+                    "status": "SUCCESS"
+                }
+            ]
+        },
+        "DimMaterial": {
+            "row_count": 282,
+            "schema": [
+                {
+                    "name": "Material",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": true
+                },
+                {
+                    "name": "Source",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "RCW_Last_Seen",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Qlik_Last_Seen",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Modality",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SAP_Material_Description",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Earliest_Start_Up_Date",
+                    "type": "DATE",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Latest_Start_Up_Date",
+                    "type": "DATE",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Difference_of_Start_Up_Dates_Days",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Oldest_Age",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Newest_Age",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Average_Age",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "CreatedAt",
+                    "type": "TIMESTAMP",
+                    "notnull": true,
+                    "pk": false
+                },
+                {
+                    "name": "LastUpdatedAt",
+                    "type": "TIMESTAMP",
+                    "notnull": true,
+                    "pk": false
+                },
+                {
+                    "name": "ANZ_Oldest_Age",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ANZ_Latest_Start_Up_Date",
+                    "type": "TIMESTAMP",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ANZ_Difference_of_Start_Up_Dates_Days",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ANZ_Average_Age",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ANZ_Newest_Age",
+                    "type": "REAL",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "ANZ_Earliest_Start_Up_Date",
+                    "type": "TIMESTAMP",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "indexes": [
+                {
+                    "name": "idx_dimmaterial_modality",
+                    "unique": false,
+                    "columns": [
+                        "Modality"
+                    ]
+                },
+                {
+                    "name": "idx_dimmaterial_source",
+                    "unique": false,
+                    "columns": [
+                        "Source"
+                    ]
+                },
+                {
+                    "name": "sqlite_autoindex_DimMaterial_1",
+                    "unique": true,
+                    "columns": [
+                        "Material"
+                    ]
+                }
+            ],
+            "foreign_keys": [],
+            "sample_data": [
+                {
+                    "Material": "706100",
+                    "Source": "Found in Both",
+                    "RCW_Last_Seen": "2025 Week 30",
+                    "Qlik_Last_Seen": "2025 Week 30",
+                    "Modality": "DXR",
+                    "SAP_Material_Description": "ProxiDiagnost N90",
+                    "Earliest_Start_Up_Date": "2018-07-23",
+                    "Latest_Start_Up_Date": "2024-10-10",
+                    "Difference_of_Start_Up_Dates_Days": "1970-01-01",
+                    "Oldest_Age": 7.049315068493151,
+                    "Newest_Age": 0.7890410958904108,
+                    "Average_Age": 4.69,
+                    "CreatedAt": "2025-07-27 18:15:25.848898",
+                    "LastUpdatedAt": "2025-07-27 18:15:25.848898",
+                    "ANZ_Oldest_Age": null,
+                    "ANZ_Latest_Start_Up_Date": null,
+                    "ANZ_Difference_of_Start_Up_Dates_Days": null,
+                    "ANZ_Average_Age": null,
+                    "ANZ_Newest_Age": null,
+                    "ANZ_Earliest_Start_Up_Date": null
+                },
+                {
+                    "Material": "706110",
+                    "Source": "Found in Both",
+                    "RCW_Last_Seen": "2025 Week 30",
+                    "Qlik_Last_Seen": "2025 Week 30",
+                    "Modality": "DXR",
+                    "SAP_Material_Description": "ProxiDiagnost N90",
+                    "Earliest_Start_Up_Date": "2022-03-08",
+                    "Latest_Start_Up_Date": "2025-06-24",
+                    "Difference_of_Start_Up_Dates_Days": "1970-01-01",
+                    "Oldest_Age": 3.383561643835617,
+                    "Newest_Age": 0.08493150684931507,
+                    "Average_Age": 1.5,
+                    "CreatedAt": "2025-07-27 18:15:25.848898",
+                    "LastUpdatedAt": "2025-07-27 18:15:25.848898",
+                    "ANZ_Oldest_Age": 2.652054794520548,
+                    "ANZ_Latest_Start_Up_Date": "2022-11-30",
+                    "ANZ_Difference_of_Start_Up_Dates_Days": "1970-01-01",
+                    "ANZ_Average_Age": 2.652054794520548,
+                    "ANZ_Newest_Age": 2.652054794520548,
+                    "ANZ_Earliest_Start_Up_Date": "2022-11-30"
+                },
+                {
+                    "Material": "709030",
+                    "Source": "Found in Both",
+                    "RCW_Last_Seen": "2025 Week 30",
+                    "Qlik_Last_Seen": "2025 Week 30",
+                    "Modality": "DXR",
+                    "SAP_Material_Description": "CombiDiagnost R90",
+                    "Earliest_Start_Up_Date": "2016-11-10",
+                    "Latest_Start_Up_Date": "2024-10-31",
+                    "Difference_of_Start_Up_Dates_Days": "1970-01-01",
+                    "Oldest_Age": 8.70958904109589,
+                    "Newest_Age": 0.7315068493150686,
+                    "Average_Age": 6.11,
+                    "CreatedAt": "2025-07-27 18:15:25.848898",
+                    "LastUpdatedAt": "2025-07-27 18:15:25.848898",
+                    "ANZ_Oldest_Age": 8.035616438356165,
+                    "ANZ_Latest_Start_Up_Date": "2020-08-24",
+                    "ANZ_Difference_of_Start_Up_Dates_Days": "1970-01-01",
+                    "ANZ_Average_Age": 6.292237442922374,
+                    "ANZ_Newest_Age": 4.920547945205479,
+                    "ANZ_Earliest_Start_Up_Date": "2017-07-14"
+                }
+            ]
+        }
+    },
+    "views": {
+        "DimEquipment": {
+            "row_count": 6692,
+            "schema": [
+                {
+                    "name": "EquipmentNumber",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Material",
+                    "type": "INTEGER",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "SerialNumber",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "Modality",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "MaterialDescription",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "LastKnownCustomer",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "LastKnownRegion",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "LastKnownCity",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "LastKnownDistrict",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "LastKnownMarket",
+                    "type": "TEXT",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "FirstSeenDate",
+                    "type": "",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "LastSeenDate",
+                    "type": "",
+                    "notnull": false,
+                    "pk": false
+                },
+                {
+                    "name": "TotalRecords",
+                    "type": "",
+                    "notnull": false,
+                    "pk": false
+                }
+            ],
+            "view_definition": "CREATE VIEW DimEquipment AS\n    SELECT DISTINCT\n        EquipmentNumber,\n        Material,\n        \"Serial#\" as SerialNumber,\n        Modality,\n        \"SAP Material description\" as MaterialDescription,\n        -- Get the most recent information for each equipment\n        (SELECT CustomerName \n         FROM combined_data cd2 \n         WHERE cd2.EquipmentNumber = cd.EquipmentNumber \n         ORDER BY cd2.DateKey_fk DESC \n         LIMIT 1) as LastKnownCustomer,\n        (SELECT \"Zone/Regions\" \n         FROM combined_data cd2 \n         WHERE cd2.EquipmentNumber = cd.EquipmentNumber \n         ORDER BY cd2.DateKey_fk DESC \n         LIMIT 1) as LastKnownRegion,\n        (SELECT City \n         FROM combined_data cd2 \n         WHERE cd2.EquipmentNumber = cd.EquipmentNumber \n         ORDER BY cd2.DateKey_fk DESC \n         LIMIT 1) as LastKnownCity,\n        (SELECT Districts \n         FROM combined_data cd2 \n         WHERE cd2.EquipmentNumber = cd.EquipmentNumber \n         ORDER BY cd2.DateKey_fk DESC \n         LIMIT 1) as LastKnownDistrict,\n        (SELECT Market \n         FROM combined_data cd2 \n         WHERE cd2.EquipmentNumber = cd.EquipmentNumber \n         ORDER BY cd2.DateKey_fk DESC \n         LIMIT 1) as LastKnownMarket,\n        -- First and last seen dates\n        MIN(DateKey_fk) as FirstSeenDate,\n        MAX(DateKey_fk) as LastSeenDate,\n        -- Count of records for this equipment\n        COUNT(*) as TotalRecords\n    FROM combined_data cd\n    WHERE EquipmentNumber IS NOT NULL\n    GROUP BY EquipmentNumber, Material, \"Serial#\", Modality, \"SAP Material description\"",
+            "sample_data": [
+                {
+                    "EquipmentNumber": 18412207,
+                    "Material": 781173,
+                    "SerialNumber": "13010",
+                    "Modality": "MR",
+                    "MaterialDescription": "Intera 1.5T Achieva Nova-Dual",
+                    "LastKnownCustomer": "SMRI Pty Limited",
+                    "LastKnownRegion": "NSW",
+                    "LastKnownCity": "NEWTOWN",
+                    "LastKnownDistrict": null,
+                    "LastKnownMarket": "ANZ",
+                    "FirstSeenDate": 20210426,
+                    "LastSeenDate": 20250428,
+                    "TotalRecords": 210
+                },
+                {
+                    "EquipmentNumber": 19352423,
+                    "Material": 781172,
+                    "SerialNumber": "12105",
+                    "Modality": "MR",
+                    "MaterialDescription": "Intera 1.5T Achieva Nova",
+                    "LastKnownCustomer": "I-MED Radiology Deakin",
+                    "LastKnownRegion": "NSW",
+                    "LastKnownCity": "DEAKIN",
+                    "LastKnownDistrict": null,
+                    "LastKnownMarket": "ANZ",
+                    "FirstSeenDate": 20210426,
+                    "LastSeenDate": 20251124,
+                    "TotalRecords": 240
+                },
+                {
+                    "EquipmentNumber": 31222840,
+                    "Material": 728231,
+                    "SerialNumber": "64051",
+                    "Modality": "CT",
+                    "MaterialDescription": "Brilliance CT 64 Channel",
+                    "LastKnownCustomer": "GOLD COAST UNIVERSITY HOSPITAL",
+                    "LastKnownRegion": "QLD",
+                    "LastKnownCity": "SOUTHPORT",
+                    "LastKnownDistrict": null,
+                    "LastKnownMarket": "ANZ",
+                    "FirstSeenDate": 20210426,
+                    "LastSeenDate": 20220124,
+                    "TotalRecords": 40
+                }
+            ],
+            "notes": "Views do not have their own indexes or foreign keys; they use those of their underlying base tables."
+        }
+    },
+    "all_detected_tables": [
+        "combined_data",
+        "DimDate",
+        "processed_files",
+        "dim_date",
+        "workorders",
+        "State_Location_Mapping",
+        "fse",
+        "estherIB",
+        "processed_estherib_files",
+        "DimMaterial"
+    ],
+    "all_detected_views": [
+        "DimEquipment"
+    ],
+    "overview": {
+        "object_counts": {
+            "tables": 10,
+            "views": 1,
+            "indexes": 41
+        },
+        "foreign_key_map": [],
+        "view_dependencies": {
+            "DimEquipment": [
+                "COMBINED_DATA"
+            ]
+        },
+        "orphan_tables": [
+            "DimDate",
+            "DimMaterial",
+            "State_Location_Mapping",
+            "combined_data",
+            "dim_date",
+            "estherIB",
+            "fse",
+            "processed_estherib_files",
+            "processed_files",
+            "workorders"
+        ]
+    }
+}

@@ -1,0 +1,709 @@
+Holistic Database Analysis Report
+Database: C:\Tools PHPC\columncompare\merged_data_validated.db
+Generated At: 2025-12-09T15:18:43.476340
+File Size: 980.69 MB
+================================================================================
+  DATABASE OVERVIEW
+================================================================================
+  Tables: 10 | Views: 1 | Indexes: 41
+
+  Foreign Key Relationship Map:
+    (No declared foreign key relationships found)
+
+  View Dependencies:
+    - DimEquipment --> depends on [COMBINED_DATA]
+
+  Orphan Tables (Not in any FK relationship):
+    DimDate, DimMaterial, State_Location_Mapping, combined_data, dim_date, estherIB, fse, processed_estherib_files, processed_files, workorders
+
+================================================================================
+
+TABLES (10)
+--------------------------------------------------------------------------------
+--- Table: combined_data ---
+  Total Rows: 746527
+  Schema:
+    - Country (TEXT)
+    - Modality (TEXT)
+    - CustomerName (TEXT)
+    - GroupID (TEXT)
+    - ConnectionID (TEXT)
+    - Device Capability (TEXT)
+    - EquipmentNumber (INTEGER)
+    - SW Release (TEXT)
+    - Serial# (TEXT)
+    - Material (INTEGER)
+    - iSSLlink (INTEGER)
+    - MarketProblemStats (TEXT)
+    - ProblemCategory (TEXT)
+    - DROPOFF REASON? (TEXT)
+    - System Status (TEXT)
+    - User Status (TEXT)
+    - RsnContactAge (REAL)
+    - M2MContactAge (REAL)
+    - FTContactAge (REAL)
+    - Axeda Material (REAL)
+    - AxedaFriendlyName (TEXT)
+    - AxedaMemberName (TEXT)
+    - AxedaSerialNo (TEXT)
+    - DaysSinceContractStart (TEXT)
+    - ActualLiveConnectionStatus (TEXT)
+    - ExclusionCategory (TEXT)
+    - Zone/Regions (TEXT)
+    - Districts (TEXT)
+    - Territory (REAL)
+    - City (TEXT)
+    - Contract StartDate (TEXT)
+    - Contract Type (TEXT)
+    - Current Validation Status (TEXT)
+    - Exclusion - M2M? (TEXT)
+    - Exclusion - RSN? (TEXT)
+    - Exclusion FileTransfer? (TEXT)
+    - HCFAddress (TEXT)
+    - M2MSourceIP (TEXT)
+    - WorkCenter (TEXT)
+    - Market (TEXT)
+    - RSN Material (REAL)
+    - RSN SerialNo (TEXT)
+    - RSNIPAddress (TEXT)
+    - SAP Material description (TEXT)
+    - Administrative Connection Status (TEXT)
+    - Problem-SAPValidation (REAL)
+    - Problem-RsnConnection (INTEGER)
+    - Problem-RsnReachability (INTEGER)
+    - Problem-M2MConnection (INTEGER)
+    - Problem-M2MReachability (INTEGER)
+    - Problem-PRS-FTConnection (INTEGER)
+    - Problem-PRS-FTReachability (INTEGER)
+    - Year (INTEGER)
+    - Week Num (TEXT)
+    - Week (INTEGER)
+    - Date (TEXT)
+    - CMVPN Candidate (REAL)
+    - CMVPN Configured (REAL)
+    - CMVPN Configured and Reachable (REAL)
+    - Connected - IoT? (TEXT)
+    - ConnectionStatusBasic (TEXT)
+    - ConnectionType (TEXT)
+    - Contract EndDate (TEXT)
+    - Exclusion - IoT? (TEXT)
+    - Final Windows version (TEXT)
+    - Included - IoT? (TEXT)
+    - IoTAgingDays (REAL)
+    - IoTConnectionType (TEXT)
+    - IoTContactAge (REAL)
+    - IoTReportTimestamp (TEXT)
+    - Last Axeda Contact (TEXT)
+    - Last IoT Contact (TEXT)
+    - Last RSN Contact (TEXT)
+    - Last Successful Download in PRS (TEXT)
+    - LocalIPAddress (TEXT)
+    - Never Connected (REAL)
+    - Problem-IoTConnection (REAL)
+    - Problem-IoTReachability (REAL)
+    - Reachable (REAL)
+    - Site Connection Status (TEXT)
+    - TR (REAL)
+    - Source_Filename (TEXT)
+    - DateKey_fk (INTEGER)
+  Indexes:
+    - idx_cd_tr on (TR) 
+    - idx_cd_eqp_year_week on (EquipmentNumber, Year, Week) 
+    - idx_cd_eqp on (EquipmentNumber) 
+    - idx_cd_year_week on (Year, Week) 
+    - idx_combined_material_cd on (Material) 
+    - idx_combined_equipment_num_cd on (EquipmentNumber) 
+    - idx_combined_material_datekey on (Material, DateKey_fk) 
+    - idx_combined_region_tr_date on (Zone/Regions, TR, DateKey_fk) 
+    - idx_combined_modality_tr_date on (Modality, TR, DateKey_fk) 
+    - idx_combined_eqp_tr_date on (EquipmentNumber, TR, DateKey_fk) 
+    - idx_combined_tr_datekey on (TR, DateKey_fk) 
+    - idx_combined_zone_tr_datekey on (Zone/Regions, TR, DateKey_fk) 
+    - idx_combined_zone_datekey on (Zone/Regions, DateKey_fk) 
+    - idx_combined_customer_datekey on (CustomerName, DateKey_fk) 
+    - idx_combined_equipment_datekey on (EquipmentNumber, DateKey_fk) 
+    - idx_combined_district_modality_datekey on (Districts, Modality, DateKey_fk) 
+    - idx_combined_data_DateKey_fk on (DateKey_fk) 
+    - idx_combined_data_Date on (Date) 
+  Sample Data (First 3 Rows):
+    Row 1: {'Country': 'Australia', 'Modality': 'AE', 'CustomerName': 'LISMORE BASE HOSPITAL', 'GroupID': None, 'ConnectionID': None, 'Device Capability': 'All', 'EquipmentNumber': 80911301, 'SW Release': 'nan', 'Serial#': '674', 'Material': 888220, 'iSSLlink': 0, 'MarketProblemStats': 'Connectivity Problems', 'ProblemCategory': 'Never Connected', 'DROPOFF REASON?': None, 'System Status': 'ECUS INST ', 'User Status': 'OPER', 'RsnContactAge': None, 'M2MContactAge': None, 'FTContactAge': None, 'Axeda Material': None, 'AxedaFriendlyName': None, 'AxedaMemberName': None, 'AxedaSerialNo': 'nan', 'DaysSinceContractStart': '34.0', 'ActualLiveConnectionStatus': 'connected', 'ExclusionCategory': 'Full Capability', 'Zone/Regions': 'NSW', 'Districts': None, 'Territory': None, 'City': 'LISMORE', 'Contract StartDate': '2021-03-30T00:00:00', 'Contract Type': 'Primary IS ANZ', 'Current Validation Status': None, 'Exclusion - M2M?': 'No', 'Exclusion - RSN?': 'No', 'Exclusion FileTransfer?': 'No', 'HCFAddress': 'HUNTER STREET2480', 'M2MSourceIP': None, 'WorkCenter': 'AN-61-MR', 'Market': 'ANZ', 'RSN Material': None, 'RSN SerialNo': None, 'RSNIPAddress': None, 'SAP Material description': 'Ambient Experience for MR', 'Administrative Connection Status': None, 'Problem-SAPValidation': None, 'Problem-RsnConnection': 1, 'Problem-RsnReachability': 1, 'Problem-M2MConnection': 1, 'Problem-M2MReachability': 1, 'Problem-PRS-FTConnection': 1, 'Problem-PRS-FTReachability': 1, 'Year': 2021, 'Week Num': 'Week 17', 'Week': 17, 'Date': '2021-04-26T00:00:00', 'CMVPN Candidate': None, 'CMVPN Configured': None, 'CMVPN Configured and Reachable': None, 'Connected - IoT?': None, 'ConnectionStatusBasic': None, 'ConnectionType': None, 'Contract EndDate': None, 'Exclusion - IoT?': None, 'Final Windows version': None, 'Included - IoT?': None, 'IoTAgingDays': None, 'IoTConnectionType': None, 'IoTContactAge': None, 'IoTReportTimestamp': None, 'Last Axeda Contact': None, 'Last IoT Contact': None, 'Last RSN Contact': None, 'Last Successful Download in PRS': None, 'LocalIPAddress': None, 'Never Connected': None, 'Problem-IoTConnection': None, 'Problem-IoTReachability': None, 'Reachable': None, 'Site Connection Status': None, 'TR': 0.0, 'Source_Filename': '2021 Week 17 04 05 2021.xlsx', 'DateKey_fk': 20210426}
+    Row 2: {'Country': 'Australia', 'Modality': 'US', 'CustomerName': 'QUEENSLAND CARDIOVASCULAR GROUP', 'GroupID': None, 'ConnectionID': None, 'Device Capability': 'All', 'EquipmentNumber': 61331072, 'SW Release': '?', 'Serial#': 'USN13C0311', 'Material': 795205, 'iSSLlink': 1, 'MarketProblemStats': 'TR', 'ProblemCategory': 'Fully Connected and Reachable', 'DROPOFF REASON?': None, 'System Status': 'INST ', 'User Status': 'OPER', 'RsnContactAge': None, 'M2MContactAge': 3.0, 'FTContactAge': 46.0, 'Axeda Material': 795205.0, 'AxedaFriendlyName': 'US_61331072_USN13C0311', 'AxedaMemberName': 'US_795205_USN13C0311', 'AxedaSerialNo': 'USN13C0311', 'DaysSinceContractStart': '214.0', 'ActualLiveConnectionStatus': 'connected', 'ExclusionCategory': 'Full Capability', 'Zone/Regions': 'QLD', 'Districts': None, 'Territory': None, 'City': 'BRISBANE', 'Contract StartDate': '2020-10-01T00:00:00', 'Contract Type': 'Value IS_US', 'Current Validation Status': None, 'Exclusion - M2M?': 'No', 'Exclusion - RSN?': 'No', 'Exclusion FileTransfer?': 'No', 'HCFAddress': 'LEVEL 8, 457 WICKHAM TERRACE4000', 'M2MSourceIP': '60.241.96.46', 'WorkCenter': 'AN-63-US', 'Market': 'ANZ', 'RSN Material': None, 'RSN SerialNo': None, 'RSNIPAddress': None, 'SAP Material description': 'EPIQ 5C Ultrasound System', 'Administrative Connection Status': None, 'Problem-SAPValidation': None, 'Problem-RsnConnection': 0, 'Problem-RsnReachability': 0, 'Problem-M2MConnection': 0, 'Problem-M2MReachability': 0, 'Problem-PRS-FTConnection': 0, 'Problem-PRS-FTReachability': 0, 'Year': 2021, 'Week Num': 'Week 17', 'Week': 17, 'Date': '2021-04-26T00:00:00', 'CMVPN Candidate': None, 'CMVPN Configured': None, 'CMVPN Configured and Reachable': None, 'Connected - IoT?': None, 'ConnectionStatusBasic': None, 'ConnectionType': None, 'Contract EndDate': None, 'Exclusion - IoT?': None, 'Final Windows version': None, 'Included - IoT?': None, 'IoTAgingDays': None, 'IoTConnectionType': None, 'IoTContactAge': None, 'IoTReportTimestamp': None, 'Last Axeda Contact': None, 'Last IoT Contact': None, 'Last RSN Contact': None, 'Last Successful Download in PRS': None, 'LocalIPAddress': None, 'Never Connected': None, 'Problem-IoTConnection': None, 'Problem-IoTReachability': None, 'Reachable': None, 'Site Connection Status': None, 'TR': 1.0, 'Source_Filename': '2021 Week 17 04 05 2021.xlsx', 'DateKey_fk': 20210426}
+    Row 3: {'Country': 'Australia', 'Modality': 'US', 'CustomerName': 'QUEENSLAND CHILDRENS HOSPITAL', 'GroupID': None, 'ConnectionID': None, 'Device Capability': 'All', 'EquipmentNumber': 63838569, 'SW Release': 'nan', 'Serial#': 'US814B0558', 'Material': 795201, 'iSSLlink': 0, 'MarketProblemStats': 'Connectivity Problems', 'ProblemCategory': 'M2M Connection', 'DROPOFF REASON?': None, 'System Status': 'INST ', 'User Status': 'OPER', 'RsnContactAge': None, 'M2MContactAge': None, 'FTContactAge': None, 'Axeda Material': None, 'AxedaFriendlyName': None, 'AxedaMemberName': None, 'AxedaSerialNo': 'nan', 'DaysSinceContractStart': '214.0', 'ActualLiveConnectionStatus': 'connected', 'ExclusionCategory': 'Full Capability', 'Zone/Regions': 'QLD', 'Districts': None, 'Territory': None, 'City': 'South Brisbane', 'Contract StartDate': '2020-10-01T00:00:00', 'Contract Type': 'Primary US ANZ', 'Current Validation Status': None, 'Exclusion - M2M?': 'No', 'Exclusion - RSN?': 'No', 'Exclusion FileTransfer?': 'No', 'HCFAddress': 'LOADING DOCK LEVEL 3,53 RAYMOND TER4101', 'M2MSourceIP': None, 'WorkCenter': 'AN-63-US', 'Market': 'ANZ', 'RSN Material': None, 'RSN SerialNo': None, 'RSNIPAddress': None, 'SAP Material description': 'EPIQ 7C Ultrasound System', 'Administrative Connection Status': None, 'Problem-SAPValidation': None, 'Problem-RsnConnection': 0, 'Problem-RsnReachability': 0, 'Problem-M2MConnection': 1, 'Problem-M2MReachability': 1, 'Problem-PRS-FTConnection': 0, 'Problem-PRS-FTReachability': 0, 'Year': 2021, 'Week Num': 'Week 17', 'Week': 17, 'Date': '2021-04-26T00:00:00', 'CMVPN Candidate': None, 'CMVPN Configured': None, 'CMVPN Configured and Reachable': None, 'Connected - IoT?': None, 'ConnectionStatusBasic': None, 'ConnectionType': None, 'Contract EndDate': None, 'Exclusion - IoT?': None, 'Final Windows version': None, 'Included - IoT?': None, 'IoTAgingDays': None, 'IoTConnectionType': None, 'IoTContactAge': None, 'IoTReportTimestamp': None, 'Last Axeda Contact': None, 'Last IoT Contact': None, 'Last RSN Contact': None, 'Last Successful Download in PRS': None, 'LocalIPAddress': None, 'Never Connected': None, 'Problem-IoTConnection': None, 'Problem-IoTReachability': None, 'Reachable': None, 'Site Connection Status': None, 'TR': 0.0, 'Source_Filename': '2021 Week 17 04 05 2021.xlsx', 'DateKey_fk': 20210426}
+
+
+--- Table: DimDate ---
+  Total Rows: 4018
+  Schema:
+    - DateKey (INTEGER)
+    - FullDate (TEXT)
+    - Year (INTEGER)
+    - ISOYear (INTEGER)
+    - MonthOfYear (INTEGER)
+    - MonthName (TEXT)
+    - DayOfMonth (INTEGER)
+    - DayOfYear (INTEGER)
+    - DayOfWeek (INTEGER)
+    - DayName (TEXT)
+    - QuarterOfYear (INTEGER)
+    - QuarterName (TEXT)
+    - WeekOfYear (INTEGER)
+    - WeekNumText (TEXT)
+    - WeekStartDate (TEXT)
+    - WeekEndDate (TEXT)
+    - WeekDateRange (TEXT)
+    - IsWeekend (INTEGER)
+  Indexes:
+    - idx_dimdate_fulldate on (FullDate, DateKey) 
+    - idx_dimdate_year_month on (Year, MonthOfYear, DateKey) 
+    - idx_dimdate_year_quarter on (Year, QuarterOfYear, DateKey) 
+    - idx_dimdate_year on (Year) 
+    - idx_DimDate_DateKey on (DateKey) 
+  Sample Data (First 3 Rows):
+    Row 1: {'DateKey': 20200101, 'FullDate': '2020-01-01', 'Year': 2020, 'ISOYear': 2020, 'MonthOfYear': 1, 'MonthName': 'January', 'DayOfMonth': 1, 'DayOfYear': 1, 'DayOfWeek': 3, 'DayName': 'Wednesday', 'QuarterOfYear': 1, 'QuarterName': 'Q1', 'WeekOfYear': 1, 'WeekNumText': 'Week 1', 'WeekStartDate': '2019-12-30', 'WeekEndDate': '2020-01-05', 'WeekDateRange': '2019-12-30 to 2020-01-05', 'IsWeekend': 0}
+    Row 2: {'DateKey': 20200102, 'FullDate': '2020-01-02', 'Year': 2020, 'ISOYear': 2020, 'MonthOfYear': 1, 'MonthName': 'January', 'DayOfMonth': 2, 'DayOfYear': 2, 'DayOfWeek': 4, 'DayName': 'Thursday', 'QuarterOfYear': 1, 'QuarterName': 'Q1', 'WeekOfYear': 1, 'WeekNumText': 'Week 1', 'WeekStartDate': '2019-12-30', 'WeekEndDate': '2020-01-05', 'WeekDateRange': '2019-12-30 to 2020-01-05', 'IsWeekend': 0}
+    Row 3: {'DateKey': 20200103, 'FullDate': '2020-01-03', 'Year': 2020, 'ISOYear': 2020, 'MonthOfYear': 1, 'MonthName': 'January', 'DayOfMonth': 3, 'DayOfYear': 3, 'DayOfWeek': 5, 'DayName': 'Friday', 'QuarterOfYear': 1, 'QuarterName': 'Q1', 'WeekOfYear': 1, 'WeekNumText': 'Week 1', 'WeekStartDate': '2019-12-30', 'WeekEndDate': '2020-01-05', 'WeekDateRange': '2019-12-30 to 2020-01-05', 'IsWeekend': 0}
+
+
+--- Table: processed_files ---
+  Total Rows: 31
+  Schema:
+    - filename (TEXT) (PK)
+    - processed_at (TIMESTAMP)
+  Indexes:
+    - sqlite_autoindex_processed_files_1 on (filename) (UNIQUE)
+  Sample Data (First 3 Rows):
+    Row 1: {'filename': '2025 Week 19 04 05 2025.xlsx', 'processed_at': '2025-05-20 04:09:04'}
+    Row 2: {'filename': '2025 Week 19 05 05 2025.xlsx', 'processed_at': '2025-05-20 14:50:39.017292'}
+    Row 3: {'filename': '2025 Week 20 12 05 2025.xlsx', 'processed_at': '2025-05-20 16:57:22.038912'}
+
+
+--- Table: dim_date ---
+  Total Rows: 1
+  Schema:
+    - DateKey (INTEGER) (PK)
+    - FullDate (DATE)
+    - Year (INTEGER)
+    - Month (INTEGER)
+    - Day (INTEGER)
+    - DayOfWeek (INTEGER)
+    - DayName (TEXT)
+    - MonthName (TEXT)
+  Indexes:
+    - sqlite_autoindex_dim_date_1 on (FullDate) (UNIQUE)
+  Sample Data (First 3 Rows):
+    Row 1: {'DateKey': 20250405, 'FullDate': '2025-04-05', 'Year': 2025, 'Month': 4, 'Day': 5, 'DayOfWeek': 5, 'DayName': 'Saturday', 'MonthName': 'April'}
+
+
+--- Table: workorders ---
+  Total Rows: 123798
+  Schema:
+    - WorkOrderNumber (TEXT) (PK)
+    - CaseNumber (TEXT)
+    - EventType (TEXT)
+    - Material (INTEGER)
+    - OrderStatus (TEXT)
+    - ScheduleStatus (TEXT)
+    - EquipmentNumber (INTEGER)
+    - SerialNumber (TEXT)
+    - Modality (TEXT)
+    - SAPMaterialDescription (TEXT)
+    - WorkOrderCreatedDate (TEXT)
+    - Technician (TEXT)
+    - ServiceType (TEXT)
+    - ScheduledDateTime (TEXT)
+    - Account (TEXT)
+    - CustomerName (TEXT)
+    - State (TEXT)
+    - Country (TEXT)
+    - RefreshDate (TEXT)
+    - TechnicianMatchKey_fk (TEXT)
+    - ServiceTeam (TEXT)
+    - ServiceMaxExtractDate (TEXT)
+  Indexes:
+    - idx_wo_equip_scheddt on (EquipmentNumber, ScheduledDateTime) 
+    - idx_wo_customer on (CustomerName) 
+    - idx_wo_refresh_dt on (RefreshDate) 
+    - idx_wo_created_dt on (WorkOrderCreatedDate) 
+    - idx_wo_scheduled_dt on (ScheduledDateTime) 
+    - idx_wo_serial_num on (SerialNumber) 
+    - idx_wo_material on (Material) 
+    - idx_wo_equipment_num on (EquipmentNumber) 
+    - sqlite_autoindex_workorders_1 on (WorkOrderNumber) (UNIQUE)
+  Sample Data (First 3 Rows):
+    Row 1: {'WorkOrderNumber': 'WO-05828636', 'CaseNumber': '119575776', 'EventType': 'Supplementary Services', 'Material': 453564734111, 'OrderStatus': 'Fixed', 'ScheduleStatus': 'Confirmed', 'EquipmentNumber': 94218132, 'SerialNumber': 'B65952', 'Modality': 'PCCI', 'SAPMaterialDescription': 'M_SpO2 OEM Masimo Rainbow SET', 'WorkOrderCreatedDate': '2022-04-19', 'Technician': 'Bronte Westaway', 'ServiceType': 'Bench Repair', 'ScheduledDateTime': '2022-04-21 14:39:00', 'Account': 'PHILIPS HEALTHCARE', 'CustomerName': 'PHILIPS HEALTHCARE', 'State': 'NSW', 'Country': 'Australia', 'RefreshDate': '2025-06-05', 'TechnicianMatchKey_fk': None, 'ServiceTeam': None, 'ServiceMaxExtractDate': None}
+    Row 2: {'WorkOrderNumber': 'WO-04922149', 'CaseNumber': '118841708', 'EventType': 'Incident', 'Material': 795231, 'OrderStatus': 'Fixed', 'ScheduleStatus': 'Dispatched', 'EquipmentNumber': 93530375, 'SerialNumber': 'US621B1626', 'Modality': 'US', 'SAPMaterialDescription': 'EPIQ CVx Ultrasound System', 'WorkOrderCreatedDate': '2021-12-07', 'Technician': 'Sally SANIGAR', 'ServiceType': 'Onsite Service', 'ScheduledDateTime': '2021-12-10 12:00:00', 'Account': 'Joondalup Private Hospital', 'CustomerName': 'Joondalup Private Hospital', 'State': 'WA', 'Country': 'Australia', 'RefreshDate': '2025-06-05', 'TechnicianMatchKey_fk': None, 'ServiceTeam': None, 'ServiceMaxExtractDate': None}
+    Row 3: {'WorkOrderNumber': 'WO-05378828', 'CaseNumber': '119230229', 'EventType': 'Field Change Order', 'Material': 722079, 'OrderStatus': 'Fixed', 'ScheduleStatus': 'Dispatched', 'EquipmentNumber': 85018667, 'SerialNumber': '703384', 'Modality': 'IXR', 'SAPMaterialDescription': 'Azurion 7 M20', 'WorkOrderCreatedDate': '2022-02-15', 'Technician': 'Radan IVKOVIC', 'ServiceType': 'Onsite Service', 'ScheduledDateTime': '2022-09-01 07:00:00', 'Account': 'MACQUARIE UNIVERSITY HOSPITAL', 'CustomerName': 'MACQUARIE UNIVERSITY HOSPITAL', 'State': 'NSW', 'Country': 'Australia', 'RefreshDate': '2025-06-05', 'TechnicianMatchKey_fk': 'radan ivkovic', 'ServiceTeam': None, 'ServiceMaxExtractDate': None}
+
+
+--- Table: State_Location_Mapping ---
+  Total Rows: 34
+  Schema:
+    - State (TEXT)
+    - State_FSE (TEXT)
+    - Zone/Regions (TEXT)
+  Indexes:
+    - idx_State_Location_Mapping_state on (State) 
+  Sample Data (First 3 Rows):
+    Row 1: {'State': 'NSW', 'State_FSE': 'NSW', 'Zone/Regions': 'NSW'}
+    Row 2: {'State': 'WA', 'State_FSE': 'WA', 'Zone/Regions': 'WA'}
+    Row 3: {'State': 'OTA', 'State_FSE': 'NZ', 'Zone/Regions': 'NZ'}
+
+
+--- Table: fse ---
+  Total Rows: 123
+  Schema:
+    - Name (TEXT) (PK)
+    - Job Title (TEXT)
+    - Department (TEXT)
+    - Email (TEXT)
+    - Mobile (TEXT)
+    - Location (TEXT)
+    - Company (TEXT)
+    - Reports To (TEXT)
+    - Manager Title (TEXT)
+    - Work Hours (TEXT)
+    - Time Zone Info (TEXT)
+    - State_FSE (TEXT)
+    - Zone/Regions (TEXT)
+    - Office Address (TEXT)
+    - TechnicianMatchKey (TEXT)
+  Indexes:
+    - idx_fse_match_key on (TechnicianMatchKey) 
+    - sqlite_autoindex_fse_1 on (Name) (UNIQUE)
+  Sample Data (First 3 Rows):
+    Row 1: {'Name': 'Wong, Jimmy', 'Job Title': 'Customer Service Engineer', 'Department': 'Health Systems CS Delivery SA', 'Email': 'jimmy.wong_1@philips.com', 'Mobile': '+61 (497) 263410', 'Location': 'Adelaide - Export Park', 'Company': 'Philips', 'Reports To': 'Tan, Jason', 'Manager Title': 'Service Team Leader', 'Work Hours': '8:30 AM - 5:30 PM', 'Time Zone Info': '30 minutes ahead', 'State_FSE': 'SA', 'Zone/Regions': 'VSAT', 'Office Address': 'Philips Australia, 6 Hamra Drive, Export Park, SA, 5950', 'TechnicianMatchKey': 'jimmy wong'}
+    Row 2: {'Name': 'Tan, Jason', 'Job Title': 'Service Team Leader', 'Department': 'Health Systems CS Delivery ANZ', 'Email': 'jason.tan@philips.com', 'Mobile': '+61 458235341', 'Location': 'Adelaide - Export Park', 'Company': 'Philips', 'Reports To': 'Evdokimov, Nick', 'Manager Title': 'CS Delivery Manager ANZ', 'Work Hours': '12:30 AM - 5:30 PM', 'Time Zone Info': '30 minutes ahead', 'State_FSE': 'SA', 'Zone/Regions': 'VSAT', 'Office Address': 'Philips Australia, 6 Hamra Drive, Export Park, SA, 5950', 'TechnicianMatchKey': 'jason tan'}
+    Row 3: {'Name': 'Harrison, Kai', 'Job Title': 'Field Service Engineer', 'Department': 'Health Systems CS Delivery SA', 'Email': 'kai.harrison@philips.com', 'Mobile': '+61 (428) 680769', 'Location': 'Adelaide - Export Park', 'Company': 'Philips', 'Reports To': 'Tan, Jason', 'Manager Title': 'Service Team Leader', 'Work Hours': '8:30 AM - 5:30 PM', 'Time Zone Info': '30 minutes ahead', 'State_FSE': 'SA', 'Zone/Regions': 'VSAT', 'Office Address': 'Philips Australia, 6 Hamra Drive, Export Park, SA, 5950', 'TechnicianMatchKey': 'kai harrison'}
+
+
+--- Table: estherIB ---
+  Total Rows: 542372
+  Schema:
+    - id (INTEGER) (PK)
+    - Source_Filename (TEXT) NOT NULL
+    - ProcessDate (TIMESTAMP)
+    - Year (INTEGER)
+    - Month_Number (INTEGER)
+    - Date_File_Name (TEXT)
+    - City (TEXT)
+    - Street (TEXT)
+    - EqptSegment (TEXT)
+    - ContractEnd (DATETIME)
+    - Modality (TEXT)
+    - EquipmentNumber (REAL)
+    - EqptGroup (TEXT)
+    - Material (TEXT)
+    - SMAXDateInstalled (DATETIME)
+    - MaintPlant (TEXT)
+    - Region (TEXT)
+    - Description (TEXT)
+    - SerialNumber (REAL)
+    - ContractStart (DATETIME)
+    - SAPServicePlan (TEXT)
+    - ContractType (TEXT)
+    - ContractNo (TEXT)
+    - PostalCode (TEXT)
+    - NetPrice (REAL)
+    - FunctionalLocation (TEXT)
+    - SMAX_EOL_Determination_Policy (TEXT)
+    - SMAX_Software_Release (TEXT)
+    - List_name (TEXT)
+    - Main_WorkCtr (TEXT)
+    - Maint_Plant (TEXT)
+    - Description_1 (TEXT)
+    - System_status (TEXT)
+    - User_status (TEXT)
+    - SMAX_date_installed (TEXT)
+    - Eqpt_SHIPto (TEXT)
+    - Eqpt_SHIPto_Name (TEXT)
+    - Eqpt_SOLDto (TEXT)
+    - Eqpt_SOLDto_Name (TEXT)
+    - Cntrct_line (TEXT)
+    - SAP_Service_Plan (TEXT)
+    - SAP_Service_Plan_Description (TEXT)
+    - SMAX_Contract_Service_Plan_Description (TEXT)
+    - SMAX_Wty (TEXT)
+    - SMAX_Wty_Terms (TEXT)
+    - SMAX_Wty_Start (TEXT)
+    - SMAX_Wty_End (TEXT)
+    - SMAX_Primary_FSE_Technician (TEXT)
+    - SMAX_EOL (TEXT)
+    - SMAX_EOS (TEXT)
+    - Eqpt_Segment (TEXT)
+    - Eqpt_Group (TEXT)
+    - Comments (TEXT)
+    - Hardware_Version (TEXT)
+    - SAP_Next_Billing_Date (TEXT)
+    - SMAX_Location_Description (TEXT)
+    - EC_comments (TEXT)
+    - TechMax_Contract_QLIKVIEW (TEXT)
+    - TechMax_Contract_ID_QLIKVIEW (TEXT)
+    - SMAX_Acct_Shipping_Street_CSR (TEXT)
+    - SMAX_Acct_Shipping_City_CSR (TEXT)
+    - SMAX_Acct_Shipping_State_CSR (TEXT)
+    - SMAX_Acct_Shipping_Postal_Code_CSR (TEXT)
+    - Currency (TEXT)
+    - Missing_Warranty_based_on_SMAX_Wty_Terms (TEXT)
+    - SMAX_Hardware_Version (TEXT)
+    - Missing_Warranty_based_on_SMAX_Wty_Terms_Installed_date (TEXT)
+    - QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Conytract_Service_Plan_Description (TEXT)
+    - QlikView_eZCQ_Contract (TEXT)
+    - QlikView_eZCQ_Net_Value_EUR (TEXT)
+    - QlikView_Contract_Created_Date (TEXT)
+    - SAP_eZCQ_Cntrct_Type (TEXT)
+    - SAP_eZCQ_Contract_No (TEXT)
+    - SAP_eZCQ_Contract_line (TEXT)
+    - SAP_eZCQ_Contract_Start (TEXT)
+    - SAP_eZCQ_Contract_End (TEXT)
+    - SAP_eZCQ_Net_Price (TEXT)
+    - SAP_eZCQ_Currency (TEXT)
+    - SAP_eZCQ_Service_Plan (TEXT)
+    - SAP_eZCQ_Service_Plan_Description (TEXT)
+    - QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Contract_Service_Plan_Description (TEXT)
+  Indexes:
+    (None found)
+  Sample Data (First 3 Rows):
+    Row 1: {'id': 1, 'Source_Filename': '2021_01 ANZ IB 01_01_2021.xlsx', 'ProcessDate': '2025-07-21 11:48:29', 'Year': 2021, 'Month_Number': 1, 'Date_File_Name': '01/01/2021', 'City': 'Macquarie Park', 'Street': '299 Lane Cove Road', 'EqptSegment': None, 'ContractEnd': '2023-12-13 00:00:00', 'Modality': None, 'EquipmentNumber': 84978829.0, 'EqptGroup': None, 'Material': '795005', 'SMAXDateInstalled': None, 'MaintPlant': None, 'Region': 'NSW', 'Description': 'Lumify System', 'SerialNumber': 'US520L1129', 'ContractStart': '2021-12-14 00:00:00', 'SAPServicePlan': None, 'ContractType': 'ZCSP', 'ContractNo': '42769343.0', 'PostalCode': '2113.0', 'NetPrice': None, 'FunctionalLocation': 'AU011173-101-011', 'SMAX_EOL_Determination_Policy': None, 'SMAX_Software_Release': None, 'List_name': None, 'Main_WorkCtr': None, 'Maint_Plant': None, 'Description_1': None, 'System_status': None, 'User_status': None, 'SMAX_date_installed': None, 'Eqpt_SHIPto': None, 'Eqpt_SHIPto_Name': None, 'Eqpt_SOLDto': None, 'Eqpt_SOLDto_Name': None, 'Cntrct_line': None, 'SAP_Service_Plan': None, 'SAP_Service_Plan_Description': None, 'SMAX_Contract_Service_Plan_Description': None, 'SMAX_Wty': None, 'SMAX_Wty_Terms': None, 'SMAX_Wty_Start': None, 'SMAX_Wty_End': None, 'SMAX_Primary_FSE_Technician': None, 'SMAX_EOL': None, 'SMAX_EOS': None, 'Eqpt_Segment': None, 'Eqpt_Group': None, 'Comments': None, 'Hardware_Version': None, 'SAP_Next_Billing_Date': None, 'SMAX_Location_Description': None, 'EC_comments': None, 'TechMax_Contract_QLIKVIEW': None, 'TechMax_Contract_ID_QLIKVIEW': None, 'SMAX_Acct_Shipping_Street_CSR': None, 'SMAX_Acct_Shipping_City_CSR': None, 'SMAX_Acct_Shipping_State_CSR': None, 'SMAX_Acct_Shipping_Postal_Code_CSR': None, 'Currency': None, 'Missing_Warranty_based_on_SMAX_Wty_Terms': None, 'SMAX_Hardware_Version': None, 'Missing_Warranty_based_on_SMAX_Wty_Terms_Installed_date': None, 'QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Conytract_Service_Plan_Description': None, 'QlikView_eZCQ_Contract': None, 'QlikView_eZCQ_Net_Value_EUR': None, 'QlikView_Contract_Created_Date': None, 'SAP_eZCQ_Cntrct_Type': None, 'SAP_eZCQ_Contract_No': None, 'SAP_eZCQ_Contract_line': None, 'SAP_eZCQ_Contract_Start': None, 'SAP_eZCQ_Contract_End': None, 'SAP_eZCQ_Net_Price': None, 'SAP_eZCQ_Currency': None, 'SAP_eZCQ_Service_Plan': None, 'SAP_eZCQ_Service_Plan_Description': None, 'QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Contract_Service_Plan_Description': None}
+    Row 2: {'id': 2, 'Source_Filename': '2021_01 ANZ IB 01_01_2021.xlsx', 'ProcessDate': '2025-07-21 11:48:29', 'Year': 2021, 'Month_Number': 1, 'Date_File_Name': '01/01/2021', 'City': 'Macquarie Park', 'Street': '299 Lane Cove Road', 'EqptSegment': None, 'ContractEnd': '2023-12-13 00:00:00', 'Modality': None, 'EquipmentNumber': 84978843.0, 'EqptGroup': None, 'Material': '795005', 'SMAXDateInstalled': None, 'MaintPlant': None, 'Region': 'NSW', 'Description': 'Lumify System', 'SerialNumber': 'US520L1098', 'ContractStart': '2021-12-14 00:00:00', 'SAPServicePlan': None, 'ContractType': 'ZCSP', 'ContractNo': '42769344.0', 'PostalCode': '2113.0', 'NetPrice': None, 'FunctionalLocation': 'AU011173-101-011', 'SMAX_EOL_Determination_Policy': None, 'SMAX_Software_Release': None, 'List_name': None, 'Main_WorkCtr': None, 'Maint_Plant': None, 'Description_1': None, 'System_status': None, 'User_status': None, 'SMAX_date_installed': None, 'Eqpt_SHIPto': None, 'Eqpt_SHIPto_Name': None, 'Eqpt_SOLDto': None, 'Eqpt_SOLDto_Name': None, 'Cntrct_line': None, 'SAP_Service_Plan': None, 'SAP_Service_Plan_Description': None, 'SMAX_Contract_Service_Plan_Description': None, 'SMAX_Wty': None, 'SMAX_Wty_Terms': None, 'SMAX_Wty_Start': None, 'SMAX_Wty_End': None, 'SMAX_Primary_FSE_Technician': None, 'SMAX_EOL': None, 'SMAX_EOS': None, 'Eqpt_Segment': None, 'Eqpt_Group': None, 'Comments': None, 'Hardware_Version': None, 'SAP_Next_Billing_Date': None, 'SMAX_Location_Description': None, 'EC_comments': None, 'TechMax_Contract_QLIKVIEW': None, 'TechMax_Contract_ID_QLIKVIEW': None, 'SMAX_Acct_Shipping_Street_CSR': None, 'SMAX_Acct_Shipping_City_CSR': None, 'SMAX_Acct_Shipping_State_CSR': None, 'SMAX_Acct_Shipping_Postal_Code_CSR': None, 'Currency': None, 'Missing_Warranty_based_on_SMAX_Wty_Terms': None, 'SMAX_Hardware_Version': None, 'Missing_Warranty_based_on_SMAX_Wty_Terms_Installed_date': None, 'QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Conytract_Service_Plan_Description': None, 'QlikView_eZCQ_Contract': None, 'QlikView_eZCQ_Net_Value_EUR': None, 'QlikView_Contract_Created_Date': None, 'SAP_eZCQ_Cntrct_Type': None, 'SAP_eZCQ_Contract_No': None, 'SAP_eZCQ_Contract_line': None, 'SAP_eZCQ_Contract_Start': None, 'SAP_eZCQ_Contract_End': None, 'SAP_eZCQ_Net_Price': None, 'SAP_eZCQ_Currency': None, 'SAP_eZCQ_Service_Plan': None, 'SAP_eZCQ_Service_Plan_Description': None, 'QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Contract_Service_Plan_Description': None}
+    Row 3: {'id': 3, 'Source_Filename': '2021_01 ANZ IB 01_01_2021.xlsx', 'ProcessDate': '2025-07-21 11:48:29', 'Year': 2021, 'Month_Number': 1, 'Date_File_Name': '01/01/2021', 'City': 'Macquarie Park', 'Street': '299 Lane Cove Road', 'EqptSegment': None, 'ContractEnd': '2023-12-13 00:00:00', 'Modality': None, 'EquipmentNumber': 84978846.0, 'EqptGroup': None, 'Material': '795005', 'SMAXDateInstalled': None, 'MaintPlant': None, 'Region': 'NSW', 'Description': 'Lumify System', 'SerialNumber': 'US520L1132', 'ContractStart': '2021-12-14 00:00:00', 'SAPServicePlan': None, 'ContractType': 'ZCSP', 'ContractNo': '42769345.0', 'PostalCode': '2113.0', 'NetPrice': None, 'FunctionalLocation': 'AU011173-101-011', 'SMAX_EOL_Determination_Policy': None, 'SMAX_Software_Release': None, 'List_name': None, 'Main_WorkCtr': None, 'Maint_Plant': None, 'Description_1': None, 'System_status': None, 'User_status': None, 'SMAX_date_installed': None, 'Eqpt_SHIPto': None, 'Eqpt_SHIPto_Name': None, 'Eqpt_SOLDto': None, 'Eqpt_SOLDto_Name': None, 'Cntrct_line': None, 'SAP_Service_Plan': None, 'SAP_Service_Plan_Description': None, 'SMAX_Contract_Service_Plan_Description': None, 'SMAX_Wty': None, 'SMAX_Wty_Terms': None, 'SMAX_Wty_Start': None, 'SMAX_Wty_End': None, 'SMAX_Primary_FSE_Technician': None, 'SMAX_EOL': None, 'SMAX_EOS': None, 'Eqpt_Segment': None, 'Eqpt_Group': None, 'Comments': None, 'Hardware_Version': None, 'SAP_Next_Billing_Date': None, 'SMAX_Location_Description': None, 'EC_comments': None, 'TechMax_Contract_QLIKVIEW': None, 'TechMax_Contract_ID_QLIKVIEW': None, 'SMAX_Acct_Shipping_Street_CSR': None, 'SMAX_Acct_Shipping_City_CSR': None, 'SMAX_Acct_Shipping_State_CSR': None, 'SMAX_Acct_Shipping_Postal_Code_CSR': None, 'Currency': None, 'Missing_Warranty_based_on_SMAX_Wty_Terms': None, 'SMAX_Hardware_Version': None, 'Missing_Warranty_based_on_SMAX_Wty_Terms_Installed_date': None, 'QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Conytract_Service_Plan_Description': None, 'QlikView_eZCQ_Contract': None, 'QlikView_eZCQ_Net_Value_EUR': None, 'QlikView_Contract_Created_Date': None, 'SAP_eZCQ_Cntrct_Type': None, 'SAP_eZCQ_Contract_No': None, 'SAP_eZCQ_Contract_line': None, 'SAP_eZCQ_Contract_Start': None, 'SAP_eZCQ_Contract_End': None, 'SAP_eZCQ_Net_Price': None, 'SAP_eZCQ_Currency': None, 'SAP_eZCQ_Service_Plan': None, 'SAP_eZCQ_Service_Plan_Description': None, 'QlikView_Service_Plan_SVMXC_this_replaces_SMAX_Contract_Service_Plan_Description': None}
+
+
+--- Table: processed_estherib_files ---
+  Total Rows: 51
+  Schema:
+    - filename (TEXT) (PK)
+    - processed_at (TIMESTAMP)
+    - status (TEXT)
+  Indexes:
+    - sqlite_autoindex_processed_estherib_files_1 on (filename) (UNIQUE)
+  Sample Data (First 3 Rows):
+    Row 1: {'filename': '2021_01 ANZ IB 01_01_2021.xlsx', 'processed_at': '2025-07-21 21:48:29.687808', 'status': 'SUCCESS'}
+    Row 2: {'filename': '2021_02 ANZ IB 01_02_2021.xlsx', 'processed_at': '2025-07-21 21:48:36.098737', 'status': 'SUCCESS'}
+    Row 3: {'filename': '2021_03 ANZ IB 01_03_2021.xlsx', 'processed_at': '2025-07-21 21:48:45.244374', 'status': 'SUCCESS'}
+
+
+--- Table: DimMaterial ---
+  Total Rows: 282
+  Schema:
+    - Material (TEXT) (PK)
+    - Source (TEXT)
+    - RCW_Last_Seen (TEXT)
+    - Qlik_Last_Seen (TEXT)
+    - Modality (TEXT)
+    - SAP_Material_Description (TEXT)
+    - Earliest_Start_Up_Date (DATE)
+    - Latest_Start_Up_Date (DATE)
+    - Difference_of_Start_Up_Dates_Days (INTEGER)
+    - Oldest_Age (REAL)
+    - Newest_Age (REAL)
+    - Average_Age (REAL)
+    - CreatedAt (TIMESTAMP) NOT NULL
+    - LastUpdatedAt (TIMESTAMP) NOT NULL
+    - ANZ_Oldest_Age (REAL)
+    - ANZ_Latest_Start_Up_Date (TIMESTAMP)
+    - ANZ_Difference_of_Start_Up_Dates_Days (REAL)
+    - ANZ_Average_Age (REAL)
+    - ANZ_Newest_Age (REAL)
+    - ANZ_Earliest_Start_Up_Date (TIMESTAMP)
+  Indexes:
+    - idx_dimmaterial_modality on (Modality) 
+    - idx_dimmaterial_source on (Source) 
+    - sqlite_autoindex_DimMaterial_1 on (Material) (UNIQUE)
+  Sample Data (First 3 Rows):
+    Row 1: {'Material': '706100', 'Source': 'Found in Both', 'RCW_Last_Seen': '2025 Week 30', 'Qlik_Last_Seen': '2025 Week 30', 'Modality': 'DXR', 'SAP_Material_Description': 'ProxiDiagnost N90', 'Earliest_Start_Up_Date': '2018-07-23', 'Latest_Start_Up_Date': '2024-10-10', 'Difference_of_Start_Up_Dates_Days': '1970-01-01', 'Oldest_Age': 7.049315068493151, 'Newest_Age': 0.7890410958904108, 'Average_Age': 4.69, 'CreatedAt': '2025-07-27 18:15:25.848898', 'LastUpdatedAt': '2025-07-27 18:15:25.848898', 'ANZ_Oldest_Age': None, 'ANZ_Latest_Start_Up_Date': None, 'ANZ_Difference_of_Start_Up_Dates_Days': None, 'ANZ_Average_Age': None, 'ANZ_Newest_Age': None, 'ANZ_Earliest_Start_Up_Date': None}
+    Row 2: {'Material': '706110', 'Source': 'Found in Both', 'RCW_Last_Seen': '2025 Week 30', 'Qlik_Last_Seen': '2025 Week 30', 'Modality': 'DXR', 'SAP_Material_Description': 'ProxiDiagnost N90', 'Earliest_Start_Up_Date': '2022-03-08', 'Latest_Start_Up_Date': '2025-06-24', 'Difference_of_Start_Up_Dates_Days': '1970-01-01', 'Oldest_Age': 3.383561643835617, 'Newest_Age': 0.08493150684931507, 'Average_Age': 1.5, 'CreatedAt': '2025-07-27 18:15:25.848898', 'LastUpdatedAt': '2025-07-27 18:15:25.848898', 'ANZ_Oldest_Age': 2.652054794520548, 'ANZ_Latest_Start_Up_Date': '2022-11-30', 'ANZ_Difference_of_Start_Up_Dates_Days': '1970-01-01', 'ANZ_Average_Age': 2.652054794520548, 'ANZ_Newest_Age': 2.652054794520548, 'ANZ_Earliest_Start_Up_Date': '2022-11-30'}
+    Row 3: {'Material': '709030', 'Source': 'Found in Both', 'RCW_Last_Seen': '2025 Week 30', 'Qlik_Last_Seen': '2025 Week 30', 'Modality': 'DXR', 'SAP_Material_Description': 'CombiDiagnost R90', 'Earliest_Start_Up_Date': '2016-11-10', 'Latest_Start_Up_Date': '2024-10-31', 'Difference_of_Start_Up_Dates_Days': '1970-01-01', 'Oldest_Age': 8.70958904109589, 'Newest_Age': 0.7315068493150686, 'Average_Age': 6.11, 'CreatedAt': '2025-07-27 18:15:25.848898', 'LastUpdatedAt': '2025-07-27 18:15:25.848898', 'ANZ_Oldest_Age': 8.035616438356165, 'ANZ_Latest_Start_Up_Date': '2020-08-24', 'ANZ_Difference_of_Start_Up_Dates_Days': '1970-01-01', 'ANZ_Average_Age': 6.292237442922374, 'ANZ_Newest_Age': 4.920547945205479, 'ANZ_Earliest_Start_Up_Date': '2017-07-14'}
+
+
+VIEWS (1)
+--------------------------------------------------------------------------------
+--- View: DimEquipment ---
+  Total Rows: 6692
+  Notes: Views do not have their own indexes or foreign keys; they use those of their underlying base tables.
+  View Definition (SQL):
+    CREATE VIEW DimEquipment AS
+        SELECT DISTINCT
+            EquipmentNumber,
+            Material,
+            "Serial#" as SerialNumber,
+            Modality,
+            "SAP Material description" as MaterialDescription,
+            -- Get the most recent information for each equipment
+            (SELECT CustomerName 
+             FROM combined_data cd2 
+             WHERE cd2.EquipmentNumber = cd.EquipmentNumber 
+             ORDER BY cd2.DateKey_fk DESC 
+             LIMIT 1) as LastKnownCustomer,
+            (SELECT "Zone/Regions" 
+             FROM combined_data cd2 
+             WHERE cd2.EquipmentNumber = cd.EquipmentNumber 
+             ORDER BY cd2.DateKey_fk DESC 
+             LIMIT 1) as LastKnownRegion,
+            (SELECT City 
+             FROM combined_data cd2 
+             WHERE cd2.EquipmentNumber = cd.EquipmentNumber 
+             ORDER BY cd2.DateKey_fk DESC 
+             LIMIT 1) as LastKnownCity,
+            (SELECT Districts 
+             FROM combined_data cd2 
+             WHERE cd2.EquipmentNumber = cd.EquipmentNumber 
+             ORDER BY cd2.DateKey_fk DESC 
+             LIMIT 1) as LastKnownDistrict,
+            (SELECT Market 
+             FROM combined_data cd2 
+             WHERE cd2.EquipmentNumber = cd.EquipmentNumber 
+             ORDER BY cd2.DateKey_fk DESC 
+             LIMIT 1) as LastKnownMarket,
+            -- First and last seen dates
+            MIN(DateKey_fk) as FirstSeenDate,
+            MAX(DateKey_fk) as LastSeenDate,
+            -- Count of records for this equipment
+            COUNT(*) as TotalRecords
+        FROM combined_data cd
+        WHERE EquipmentNumber IS NOT NULL
+        GROUP BY EquipmentNumber, Material, "Serial#", Modality, "SAP Material description"
+  Schema (Columns):
+    - EquipmentNumber (INTEGER)
+    - Material (INTEGER)
+    - SerialNumber (TEXT)
+    - Modality (TEXT)
+    - MaterialDescription (TEXT)
+    - LastKnownCustomer (TEXT)
+    - LastKnownRegion (TEXT)
+    - LastKnownCity (TEXT)
+    - LastKnownDistrict (TEXT)
+    - LastKnownMarket (TEXT)
+    - FirstSeenDate ()
+    - LastSeenDate ()
+    - TotalRecords ()
+  Sample Data (First 3 Rows):
+    Row 1: {'EquipmentNumber': 18412207, 'Material': 781173, 'SerialNumber': '13010', 'Modality': 'MR', 'MaterialDescription': 'Intera 1.5T Achieva Nova-Dual', 'LastKnownCustomer': 'SMRI Pty Limited', 'LastKnownRegion': 'NSW', 'LastKnownCity': 'NEWTOWN', 'LastKnownDistrict': None, 'LastKnownMarket': 'ANZ', 'FirstSeenDate': 20210426, 'LastSeenDate': 20250428, 'TotalRecords': 210}
+    Row 2: {'EquipmentNumber': 19352423, 'Material': 781172, 'SerialNumber': '12105', 'Modality': 'MR', 'MaterialDescription': 'Intera 1.5T Achieva Nova', 'LastKnownCustomer': 'I-MED Radiology Deakin', 'LastKnownRegion': 'NSW', 'LastKnownCity': 'DEAKIN', 'LastKnownDistrict': None, 'LastKnownMarket': 'ANZ', 'FirstSeenDate': 20210426, 'LastSeenDate': 20251124, 'TotalRecords': 240}
+    Row 3: {'EquipmentNumber': 31222840, 'Material': 728231, 'SerialNumber': '64051', 'Modality': 'CT', 'MaterialDescription': 'Brilliance CT 64 Channel', 'LastKnownCustomer': 'GOLD COAST UNIVERSITY HOSPITAL', 'LastKnownRegion': 'QLD', 'LastKnownCity': 'SOUTHPORT', 'LastKnownDistrict': None, 'LastKnownMarket': 'ANZ', 'FirstSeenDate': 20210426, 'LastSeenDate': 20220124, 'TotalRecords': 40}
+
+
+================================================================================
+  STATE MAPPING ANALYSIS (Added: 2026-02-12)
+================================================================================
+
+PURPOSE:
+--------
+The State_Location_Mapping table normalizes granular State values from the 
+workorders table to canonical Zone/Regions values used in combined_data.
+This enables JOIN operations between these tables for reporting.
+
+TABLE STRUCTURE:
+----------------
+  State_Location_Mapping (38 rows)
+    - State (TEXT): Source value from workorders.State
+    - State_FSE (TEXT): Normalized state for FSE assignment
+    - Zone/Regions (TEXT): Canonical 5-region value (NSW, NZ, QLD, VSAT, WA)
+
+COMPLETE MAPPING (After Corrections):
+-------------------------------------
+  Zone/Regions = NSW (5 mappings):
+    09 → Unknown → NSW (data anomaly, 1 workorder)
+    ACT → ACT → NSW
+    Aus → ACT → NSW
+    NSW → NSW → NSW
+    New → NSW → NSW
+
+  Zone/Regions = NZ (20 mappings - NZ Regional Codes):
+    AKL → NZ → NZ  (Auckland)
+    AUK → NZ → NZ  (Auckland - variant)
+    BOP → NZ → NZ  (Bay of Plenty)
+    CAN → NZ → NZ  (Canterbury)
+    GIS → NZ → NZ  (Gisborne)
+    HKB → NZ → NZ  (Hawke's Bay) [ADDED - was missing]
+    KGB → NZ → NZ  
+    MBH → NZ → NZ  (Marlborough)
+    MWT → NZ → NZ  (Manawatū-Whanganui)
+    NI → NZ → NZ   (North Island)
+    NSN → NZ → NZ  (Nelson)
+    NTL → NZ → NZ  (Northland)
+    NZ → NZ → NZ
+    OTA → NZ → NZ  (Otago)
+    Ota → NZ → NZ  (Otago - case variant) [ADDED]
+    SI → NZ → NZ   (South Island)
+    STL → NZ → NZ  (Southland)
+    TKI → NZ → NZ  (Taranaki) [FIXED - was "kgb"]
+    WAI → NZ → NZ  (Waikato)
+    WGN → NZ → NZ  (Wellington)
+    WKO → NZ → NZ  (Waikato - variant)
+    WLG → NZ → NZ  (Wellington - variant)
+    WTC → NZ → NZ  (West Coast)
+
+  Zone/Regions = QLD (3 mappings):
+    NT → NT → QLD  (Northern Territory assigned to QLD zone)
+    QLD → QLD → QLD
+    Que → QLD → QLD
+
+  Zone/Regions = VSAT (6 mappings - VIC/SA/TAS):
+    SA → SA → VSAT
+    TAS → TAS → VSAT
+    VIC → VIC → VSAT
+    Vic → VIC → VSAT [ADDED - case variant]
+    vic → VIC → VSAT [ADDED - case variant]
+
+  Zone/Regions = WA (2 mappings):
+    WA → WA → WA
+    Wes → WA → WA
+
+DATA QUALITY ISSUES FOUND & FIXED:
+----------------------------------
+1. **TYPO FIXED**: TKI (Taranaki) mapped to "kgb" instead of "NZ"
+   - Root cause: Likely keyboard/copy-paste error
+   - Impact: Taranaki workorders would not match any combined_data region
+   - Resolution: Updated Zone/Regions from "kgb" to "NZ"
+
+2. **DUPLICATE REMOVED**: CAN (Canterbury) had duplicate entries
+   - Resolution: Kept single mapping
+
+3. **MISSING MAPPINGS ADDED**:
+   - HKB (Hawke's Bay): 227 workorders unmapped → Now maps to NZ
+   - Ota (Otago case variant): 2 workorders → Now maps to NZ
+   - Vic (VIC case variant): 318 workorders → Now maps to VSAT
+   - vic (lowercase VIC): 2 workorders → Now maps to VSAT
+   - 09 (unknown code): 1 workorder → Assigned to NSW (needs investigation)
+
+4. **CASE SENSITIVITY ISSUES**: The workorders table has inconsistent 
+   casing (VIC, Vic, vic). The mapping table now handles these variants.
+   Consider: Normalizing State values in workorders during ETL.
+
+PIPELINE SCRIPTS ANALYSIS:
+--------------------------
+Two scripts handle related transformations:
+
+1. **tr0anddistrictDB.py** (SQLite operations):
+   - Target: combined_data table in merged_data_validated.db
+   - Actions:
+     a) Fills empty/NULL "TR" values with 0
+     b) Replaces "VIC" → "VSAT" in Zone/Regions
+     c) Replaces "AUK" → "NZ" in Zone/Regions
+   - Note: These transformations are POST-import cleanup, applied
+     directly to canonical Zone/Regions (not State values)
+
+2. **tr0anddistrictsexcel.py** (Excel operations):
+   - Target: Source Excel files in C:\Data Modelling\...
+   - Actions: Same as DB script (TR fill, VIC→VSAT, AUK→NZ)
+   - Note: Pre-processing source files before import
+
+IMPORTANT: These scripts operate on the Zone/Regions column AFTER import,
+not on the State column. The State_Location_Mapping table is the reference
+for STATE → Zone/Regions translation.
+
+JOIN USAGE:
+-----------
+Currently, State_Location_Mapping appears to be a REFERENCE TABLE only.
+No existing Python scripts in /project/ use it in JOIN queries.
+
+Recommended JOIN pattern for workorders ↔ combined_data:
+  SELECT w.*, cd.*
+  FROM workorders w
+  INNER JOIN State_Location_Mapping slm ON w.State = slm.State
+  INNER JOIN combined_data cd ON slm."Zone/Regions" = cd."Zone/Regions"
+    AND w.EquipmentNumber = cd.EquipmentNumber
+
+DATA COVERAGE VALIDATION:
+-------------------------
+  workorders.State distinct values: 35
+  State_Location_Mapping coverage: 38 (includes variants)
+  Unmapped workorders after fix: 0
+
+  combined_data.Zone/Regions canonical values: 5
+    - NSW, NZ, QLD, VSAT, WA
+
+RECOMMENDATIONS:
+----------------
+1. **ETL Enhancement**: Add State normalization step during workorders import
+   to uppercase and trim State values, reducing variant mappings needed.
+
+2. **Foreign Key**: Consider adding foreign key constraint:
+   ALTER TABLE workorders ADD CONSTRAINT fk_state 
+     REFERENCES State_Location_Mapping(State);
+
+3. **Periodic Audit**: Run quarterly check for new State values:
+   SELECT DISTINCT State FROM workorders 
+   WHERE State NOT IN (SELECT State FROM State_Location_Mapping);
+
+4. **Document Unknown Codes**: Investigate what "09" represents in the 
+   1 workorder record - likely data entry error.
+
+5. **Consolidate Transforms**: The VIC→VSAT and AUK→NZ transforms in 
+   tr0anddistrictDB.py duplicate what the mapping table should handle.
+   Consider refactoring to use the mapping table as single source of truth.
+
+FILE LOCATIONS:
+---------------
+Database:
+  C:\Tools PHPC\columncompare\merged_data_validated.db
+
+State Mapping Table: State_Location_Mapping (in above DB)
+
+Pipeline Scripts:
+  C:\Tools PHPC\columncompare\project\adjustments\tr0anddistrictDB.py
+  C:\Tools PHPC\columncompare\project\adjustments\tr0anddistrictsexcel.py
+
+Analysis Report:
+  C:\Tools PHPC\columncompare\db_analysis_report_holistic.txt
+  C:\Tools PHPC\columncompare\db_analysis_report_holistic.json
+
+SUCCESS RATE METRICS:
+---------------------
+  Total Workorders:              135,372
+  Workorders with mapped State:  134,217  (States found in State_Location_Mapping)
+  Workorders with empty/NULL:      1,155  (no State value to map)
+  Mapping Success Rate:           99.15%
+
+  Breakdown by Zone/Regions:
+  --------------------------
+  Zone/Regions    Workorder Count    % of Total
+  ------------    ---------------    ----------
+  NSW                    43,979       32.49%
+  VSAT                   28,951       21.39%
+  QLD                    25,342       18.72%
+  NZ                     21,206       15.67%
+  WA                     14,739       10.89%
+  UNMAPPED                1,155        0.85%
+  ------------    ---------------    ----------
+  TOTAL                 135,372      100.00%
+
+REUSABLE STATE MAPPING PATTERN:
+-------------------------------
+This pattern can be applied to any project needing geographic normalization:
+
+1. Create a mapping table with columns:
+   - Source value (e.g., State, Region, LocationCode)
+   - Intermediate normalization (optional)
+   - Canonical target value
+
+2. SQL to apply mapping:
+   SELECT source.*, mapping.CanonicalRegion
+   FROM source_table source
+   LEFT JOIN mapping_table mapping ON source.RawRegion = mapping.SourceValue
+
+3. ETL best practices:
+   - Normalize case during import (UPPER/LOWER)
+   - Trim whitespace
+   - Log unmapped values for review
+   - Run periodic audits for new values
+
+4. Validation query template:
+   SELECT DISTINCT RawValue, COUNT(*) 
+   FROM source_table 
+   WHERE RawValue NOT IN (SELECT SourceValue FROM mapping_table)
+   GROUP BY RawValue;
+
+SUMMARY STATISTICS:
+-------------------
+Metric                          | Value
+--------------------------------|------------
+Total Workorders                | 135,372
+Mapped Workorders               | 134,217
+Unmapped (empty State)          | 1,155
+Mapping Success Rate            | 99.15%
+Unique State Values             | 35
+Mapping Table Entries           | 38
+Canonical Regions               | 5
+Last Updated                    | 2026-02-12
+
